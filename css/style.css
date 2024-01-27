@@ -601,7 +601,8 @@ align-items: center;}
 {/*Propiedades básicas*/
 font-size: 18px;
 font-family: "PPSupply";
-line-height: 21px;}
+line-height: 21px;
+padding-top: 1rem;}
 
 .quiensoytexto span
 {/*Propiedades básicas*/
