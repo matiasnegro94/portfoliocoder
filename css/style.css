@@ -1,31 +1,25 @@
 /*RESET CSS*/
-*KO
-{Margin:0;
-padding:0;}
- 
-/*TIPOGRAFÍAS DE GOOGLE*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*
+{margin:0;
+padding:0;
+box-sizing: border-box;}
 
 /*TIPOGRAFÍAS LOCALES*/
 @font-face
 {font-family: "Myriad Pro Regular"; 
-src: url("../media/fonts/MyriadPro-Regular.otf");} 
+src: url("../media/fonts/MyriadPro-Regular.otf");} /*fuente logo*/
 @font-face
 {font-family: "Silkscreen Regular"; 
-src: url("../media/fonts/Silkscreen-Regular.ttf");} 
-@font-face
-{font-family: "Kongtext"; 
-src: url("../media/fonts/kongtext.ttf");}
-@font-face
-{font-family: "VCROSDMONO"; 
-src: url("../media/fonts/VCR_OSD_MONO_1.001.ttf");}
-@font-face
-{font-family: "DePixelBreit"; 
-src: url("../media/fonts/DePixelBreit.otf");}
+src: url("../media/fonts/Silkscreen-Regular.ttf");} /* fuente pixel */
 @font-face
 {font-family: "PPSupply"; 
-src: url("../media/fonts/PPSupplyMono-Regular.otf");}
+src: url("../media/fonts/PPSupplyMono-Regular.otf");} /*fuente texto*/
+
+html
+{width: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;}
 
 body
 {/*Propiedades básicas*/
@@ -35,57 +29,35 @@ font-family: 'Afacad', sans-serif;
 text-align: center;
 display: flex;
 flex-direction: column;
-min-height: 100vh;}
+min-height: 100vh;
+width: 100%;
+min-width: 100%;
+max-width: 100%;
+overflow-x: hidden;}
 
 /*-------------------------------MEDIA QUERIES BODY -------------------------------*/
 @media only screen and (max-width: 480px)
 {body
 {/*Propiedades básicas*/
-background-color: rgb(16, 16, 16);
-color: #d8d697;
-font-family: 'Afacad', sans-serif;
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
 min-height: auto;
-width: 480px;
 margin: 0;}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 950px)
 {body
-    {/*Propiedades básicas*/
-    background-color: rgb(16, 16, 16);
-    color: #d8d697;
-    font-family: 'Afacad', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   {/*Propiedades básicas*/
     min-height: auto;
-    width: 950px;
     margin: 0;
-    padding: 0;}
-    }
+    padding: 0;
+    justify-content: center;
+align-items: center;}}
 
     @media only screen and (min-width: 951px) and (max-width: 1200px)
 
     {body
         {/*Propiedades básicas*/
-        background-color: rgb(16, 16, 16);
-        color: #d8d697;
-        font-family: 'Afacad', sans-serif;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         min-height: auto;
-        width: 100%;
-        margin: auto;
+        margin: 0;
         padding: 0;}
         }
 /*-------------------------------FIN MEDIA QUERIES BODY -------------------------------*/
@@ -94,27 +66,28 @@ main
 {/*Propiedades básicas*/
 background-color: black;
 color: #d8d697;
-flex: 1;}
+flex: 1;
+width: 100%;
+min-width: 100%;
+max-width: 100%;
+overflow-x: hidden;}
 
 /*-------------------------------MEDIA QUERIES MAIN -------------------------------*/
 @media only screen and (max-width: 480px)
 {main {/*Propiedades básicas*/
-    background-color: black;
-    color: #d8d697;
-    flex: 1;
     margin: 0;
-    width: 480px;}}
+    width: 100%;
+  justify-content: center;
+align-items: center;}}
 
-    @media only screen and (min-width: 951px) and (max-width: 1200px)
+@media only screen and (min-width: 951px) and (max-width: 1200px)
 
-    {main {/*Propiedades básicas*/
-        background-color: black;
-        color: #d8d697;
-        flex: 1;
-        margin: auto;
-        width: 1200px;
-        padding: 0;}
-    }
+{main {/*Propiedades básicas*/
+    margin: auto;
+     padding: 0;
+    justify-content: center;
+    align-items: center;}
+}
   
 /*-------------------------------FIN MEDIA QUERIES MAIN -------------------------------*/
 
@@ -155,6 +128,9 @@ header .myheader
 {/*Propiedades básicas*/
 background-color: rgb(16, 16, 16);
 width: 100%;
+min-width: 100%;
+max-width: 100%;
+overflow-x: hidden;
 height: 50px;
 /*Propiedades de Box Modelling*/
 padding: 0px 0px 0px 0px;
@@ -230,13 +206,14 @@ border-width: 0 0 0 0;
 font-size: 25px;
 font-weight: 700;}
 
+
 /*-------------------------------MEDIA QUERIES HEADER -------------------------------*/
 @media only screen and (max-width: 480px)
 {header .myheader
 {display: grid;
 width: 100%;
 height: auto;
-position:relative;}
+position: relative;}
     
 /*CONFIGURACIÓN DEL LOGO, TANTO DEL TEXTO COMO DE LA IMAGEN*/
 header .myheader .logo
@@ -262,12 +239,7 @@ grid-column-start: 1;
     
     h1
     {/*Propiedades básicas*/
-    font-size: 3rem;
-    font-weight:700;
-    font-family: "Myriad Pro Regular";
-    /*Propiedades de Box Modelling*/
-    padding: 0px 0px 0px 15px;
-    margin: 0;}
+    font-size: 3rem;}
     
     /*BARRA DE NAVEGACIÓN*/
     header nav
@@ -276,9 +248,8 @@ grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
-    text-decoration: none;
     font-size: 1rem;
-    width: 480px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,21 +264,16 @@ grid-column-start: 1;
     
     .boton
     {/*Propiedades básicas*/
-    background-color: black;
-    font-family: "Silkscreen Regular";
     font-size: 1.5rem;
     /*Propiedades de Box Modelling*/
-    border-style: solid;
-    border-width: 0,5rem 0,5rem 0,5rem 0,5rem;
-    border-color: rgb(47, 47, 45) rgb(47, 47, 45) black rgb(47, 47, 45);
-    margin: 0px;
     padding: 0px 0px 0px 0px;}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 950px)
 {header .myheader
 {display: grid;
-width: 950px;
+width: 100%;
+max-width: 100%;
 height: auto;
 position:relative;
 justify-content: center;}
@@ -319,235 +285,96 @@ margin: 0px;
 padding: 0px 0px 0px 0px;
 /*Propiedades de Flexbox*/
 grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+grid-column-end: 1;
+grid-row-start: 1;
+grid-row-end: 1;
 display: flex;
 flex-direction: row;
 justify-content: center;}
     
-    .logoimagen
-    {/*Propiedades de Box Modelling*/
-    padding: 0px 0px 23px 0px;
-    margin: 0px;}
+.logoimagen
+{/*Propiedades de Box Modelling*/
+padding: 0px 0px 23px 0px;
+margin: 0px;}
     
-    .logoimagen img
-    {width: 60px;
-    height: 60px;}
+.logoimagen img
+{width: 60px;
+height: 60px;}
     
-    h1
-    {/*Propiedades básicas*/
-    font-size: 5rem;
-    font-weight:700;
-       font-family: "Myriad Pro Regular";
-    /*Propiedades de Box Modelling*/
-    padding: 0px 0px 0px 15px;
-    margin: 0;}
+h1
+{/*Propiedades básicas*/
+font-size: 5rem;
+/*Propiedades de Box Modelling*/
+padding: 0px 0px 0px 15px;
+margin: 0;}
     
-    /*BARRA DE NAVEGACIÓN*/
-    header nav
-    {/*Propiedades básicas*/
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    text-decoration: none;
-    font-size: 4rem;
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0;}
+/*BARRA DE NAVEGACIÓN*/
+header nav
+{/*Propiedades básicas*/
+grid-column-start: 1;
+grid-column-end: 1;
+grid-row-start: 2;
+grid-row-end: 2;
+font-size: 4rem;
+width: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0;
+margin: 0;}
 
-    header nav ul
-    {padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;}
+header nav ul
+{padding: 0px;
+margin: 0px;
+display: flex;
+flex-direction: column;}
     
-    .boton
-    {/*Propiedades básicas*/
-    background-color: black;
-    font-family: "Silkscreen Regular";
-    font-size: 2.5rem;
-    /*Propiedades de Box Modelling*/
-    border-style: solid;
-    border-width: 0,5rem 0,5rem 0,5rem 0,5rem;
-    border-color: rgb(47, 47, 45) rgb(47, 47, 45) black rgb(47, 47, 45);
-    margin: 0px;
-    padding: 0px 0px 0px 0px;
-    width: 950px;}
+.boton
+{/*Propiedades básicas*/
+font-size: 2.5rem;
+/*Propiedades de Box Modelling*/
+padding: 0px 0px 0px 0px;
+width: 100%;}}
 
-    .boton:hover
-    {/*Propiedades básicas*/
-    background-color:rgb(47, 47, 45);
-    border-width: 0 0 0 0;
-    font-size: 3rem;
-    font-weight: 700;}}
+@media only screen and (min-width: 951px) and (max-width: 1200px) /*media queries header 1200*/
+{header .myheader
+{/*Propiedades básicas*/
+height: 6rem;
+/*Propiedades de Box Modelling*/
+position: relative;}
+        
+/*CONFIGURACIÓN DEL LOGO, TANTO DEL TEXTO COMO DE LA IMAGEN*/
+header .myheader .logo
+{/*Propiedades de Box Modelling*/
+padding-left: 3rem;}        
 
-    @media only screen and (min-width: 951px) and (max-width: 1200px) /*media queries header 1200*/
-    {header .myheader
-        {/*Propiedades básicas*/
-        background-color: rgb(16, 16, 16);
-        width: 1200px;
-        height: 6rem;
-        /*Propiedades de Box Modelling*/
-        padding: 0px 0px 0px 0px;
-        margin: 0 0 0 0; /*Forma abreviada*/
-        position: relative;
-        top: 0;
-        /*Propiedades de Flexbox*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;}
+.logoimagen
+{/*Propiedades de Box Modelling*/
+padding: 0px 0px 20px 0px;}
         
-        /*CONFIGURACIÓN DEL LOGO, TANTO DEL TEXTO COMO DE LA IMAGEN*/
-        header .myheader .logo
-        {/*Propiedades de Box Modelling*/
-        margin-bottom: 0;
-        padding-left: 3rem;
-        /*Propiedades de Flexbox*/
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-end;}
-        
-        .logoimagen
-        {/*Propiedades de Box Modelling*/
-        padding: 0px 0px 20px 0px;}
-        
-        .logoimagen img
-        {width: 50px;
-        height: 50px;}
-        
-        h1
-        {/*Propiedades básicas*/
-        font-size: 2rem;
-        font-weight:700;
-                font-family: "Myriad Pro Regular";
-        /*Propiedades de Box Modelling*/
-        padding: 0px 0px 0px 15px;
-        margin: 0;}
-        
-        h1:hover
-        {/*Propiedades básicas*/
-        font-weight: 700;
-        color: red;
-        /*Propiedades de Box Modelling*/
-        padding: 15px 0rem 0rem 20px;}
-        
-        /*BARRA DE NAVEGACIÓN*/
-        header nav
-        {/*Propiedades básicas*/
-        text-decoration: none;
-        font-size: 1.5rem;
-        /*Propiedades de Box Modelling*/
-        padding-right: 10px;}
-        
-        .boton
-        {/*Propiedades básicas*/
-        background-color: black;
-        font-family: "Silkscreen Regular";
-        font-size: 20px;
-        /*Propiedades de Box Modelling*/
-        border-style: solid;
-        border-width: 0,5rem 0,5rem 0,5rem 0,5rem;
-        border-color: rgb(47, 47, 45) rgb(47, 47, 45) black rgb(47, 47, 45);
-        margin: 0 0 0 0;
-        padding: 0rem 1rem 0 1rem;}
-        
-        .boton:hover
-        {/*Propiedades básicas*/
-        background-color:rgb(47, 47, 45);
-        border-width: 0 0 0 0;
-        font-size: 25px;
-        font-weight: 700;}
-        }
+.logoimagen img
+{width: 50px;
+height: 50px;}}
 
-        @media only screen and (min-width: 1200px) and (max-width: 1500px) /*media queries header 1500*/
-    {header .myheader
-        {/*Propiedades básicas*/
-        background-color: rgb(16, 16, 16);
-        width: 100%;
-        height: 6rem;
-        /*Propiedades de Box Modelling*/
-        padding: 100px 0px 0px 0px;
-        margin: 0 0 0 0; /*Forma abreviada*/
-        position: relative;
-        top: 0;
-        /*Propiedades de Flexbox*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;}
-        
-        /*CONFIGURACIÓN DEL LOGO, TANTO DEL TEXTO COMO DE LA IMAGEN*/
-        header .myheader .logo
-        {/*Propiedades de Box Modelling*/
-        margin-bottom: 0;
-        padding-left: 10px;
-        /*Propiedades de Flexbox*/
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-end;}
-        
-        .logoimagen
-        {/*Propiedades de Box Modelling*/
-        padding: 0px 0px 20px 0px;}
-        
-        .logoimagen img
-        {width: 50px;
-        height: 50px;}
-        
-        h1
-        {/*Propiedades básicas*/
-        font-size: 2rem;
-        font-weight:700;
-        color: #faf687;
-        font-family: "Myriad Pro Regular";
-        /*Propiedades de Box Modelling*/
-        padding: 0px 0px 0px 15px;
-        margin: 0;}
-        
-        h1:hover
-        {/*Propiedades básicas*/
-        font-weight: 700;
-        color: red;
-        /*Propiedades de Box Modelling*/
-        padding: 15px 0rem 0rem 20px;}
-        
-        /*BARRA DE NAVEGACIÓN*/
-        header nav
-        {/*Propiedades básicas*/
-        text-decoration: none;
-        font-size: 1.5rem;
-        /*Propiedades de Box Modelling*/
-        padding-right: 10px;}
-        
-        .boton
-        {/*Propiedades básicas*/
-        background-color: black;
-        font-family: "Silkscreen Regular";
-        font-size: 20px;
-        /*Propiedades de Box Modelling*/
-        border-style: solid;
-        border-width: 0,5rem 0,5rem 0,5rem 0,5rem;
-        border-color: rgb(47, 47, 45) rgb(47, 47, 45) black rgb(47, 47, 45);
-        margin: 0 0 0 0;
-        padding: 0rem 1rem 0 1rem;}
-        
-        .boton:hover
-        {/*Propiedades básicas*/
-        background-color:rgb(47, 47, 45);
-        border-width: 0 0 0 0;
-        font-size: 25px;
-        font-weight: 700;}
-        }
-    
 
+        
+ @media only screen and (min-width: 1200px) and (max-width: 1500px) /*media queries header 1500*/
+ {header .myheader
+ {/*Propiedades básicas*/
+ /*Propiedades de Box Modelling*/
+ padding: 100px 0px 0px 0px;
+ position: relative;}
+        
+/*CONFIGURACIÓN DEL LOGO, TANTO DEL TEXTO COMO DE LA IMAGEN*/
+       
+.logoimagen
+{/*Propiedades de Box Modelling*/
+padding: 0px 0px 20px 0px;}
+        
+.logoimagen img
+{width: 50px;
+height: 50px;}}
+     
 /*-------------------------- FIN MEDIA QUERIES HEADER -------------------------*/
 
 
@@ -775,7 +602,8 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: auto;}
+margin: auto;
+width: 100%}
     
 .secciones
 {/*Propiedades básicas*/
@@ -1016,7 +844,7 @@ padding: 0;}}
 font-size: 35px;
 /*Propiedades de Flexbox*/
 display: flex;
-flex-direction: ;
+flex-direction: column;
 margin: 0rem 0rem 0rem 0rem;
 padding: 0rem 0rem 0rem 0rem;
 width: 100%;}
@@ -1348,10 +1176,13 @@ border-style: solid;
 border-width: 0,5rem;
 border-color: rgb(16, 16, 16);
 width: 100%;
-height: 2rem;
+min-width: 100%;
+max-width: 100%;
+overflow-x: hidden;
+height: auto;
 position: fixed;
 bottom: 0;
-margin-top: 2rem;
+margin-top: 0;
 /*Propiedades de Flexbox*/
 display: flex;
 flex-direction: row;
@@ -1393,22 +1224,12 @@ justify-content: flex-end;}
 
 @media only screen and (max-width: 480px)
 {footer .myfooter 
-{/*Propiedades básicas*/
-background-color: black;
-/*Propiedades de Box Modelling*/
-border-style: solid;
-border-width: 0,5rem;
-border-color: rgb(16, 16, 16);
-width: 30rem;
-height: auto;
+{height: auto;
 position:static;
-bottom: 0;
-margin-top: 0rem;
+margin: 0;
 /*Propiedades de Flexbox*/
-display: flex;
 flex-direction: column;
-justify-content: flex-end;
-align-items: center;}
+justify-content: flex-end;}
 
 footer .myfooter .logofooter
 {/*Propiedades de Box Modelling*/
@@ -1424,11 +1245,7 @@ margin: 0;}
 footer .myfooter .logosfooter
 {/*Propiedades de Box Modelling*/
 margin-left: 0;
-width: auto;
-/*Propiedades de Flexbox*/
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;}
+width: auto;}
 
 footer .myfooter .logosfooter img
 {width: 55px;
@@ -1437,11 +1254,6 @@ padding: 0px 15px 0px 15px;}
 
 footer .myfooter .derechosfooter
 {/*Propiedades de Box Modelling*/
-padding: 0px;
-margin: 0;
-/*Propiedades de Flexbox*/
-display: flex;
-flex-direction: column;
 justify-content: flex-end;
 align-items: center;}
 
@@ -1450,22 +1262,12 @@ footer .myfooter .derechosfooter p
 
 @media only screen and (min-width: 481px) and (max-width: 950px)
 {footer .myfooter 
-{/*Propiedades básicas*/
-background-color: black;
-/*Propiedades de Box Modelling*/
-border-style: solid;
-border-width: 0,5rem;
-border-color: rgb(16, 16, 16);
-width: 950px;
-height: auto;
+{height: auto;
+width: 100%;
 position:static;
-bottom: 0;
-margin-top: 0rem;
-/*Propiedades de Flexbox*/
-display: flex;
+margin: 0;
 flex-direction: column;
-justify-content: flex-end;
-align-items: center;}
+justify-content: flex-end;}
 
 footer .myfooter .logofooter
 {/*Propiedades de Box Modelling*/
@@ -1481,11 +1283,7 @@ margin: 0;}
 footer .myfooter .logosfooter
 {/*Propiedades de Box Modelling*/
 margin-left: 0;
-width: auto;
-/*Propiedades de Flexbox*/
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;}
+width: auto;}
 
 footer .myfooter .logosfooter img
 {width: 105px;
@@ -1497,9 +1295,6 @@ footer .myfooter .derechosfooter
 padding: 0px;
 margin: 0;
 /*Propiedades de Flexbox*/
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
 align-items: center;}
 
 footer .myfooter .derechosfooter p
@@ -1510,17 +1305,9 @@ font-size: 2rem;}
 
 @media only screen and (min-width: 951px) and (max-width: 1200px) /*media queries footer*/
 {footer .myfooter 
-    {/*Propiedades básicas*/
-    background-color: black;
-    /*Propiedades de Box Modelling*/
-    border-style: solid;
-    border-width: 0,5rem;
-    border-color: rgb(16, 16, 16);
-    width: 1200px;
-    height: auto;
+    {height: auto;
     position:static;
-    bottom: 0;
-    margin-top: 0rem;
+    margin: 0;
     /*Propiedades de Flexbox*/
     display: flex;
     flex-direction: column;
@@ -1529,8 +1316,7 @@ font-size: 2rem;}
     
     footer .myfooter .logofooter
     {/*Propiedades de Box Modelling*/
-    padding-left: 0px;
-    padding-top: 0px;}
+    padding: 0;}
     
     footer .myfooter .logofooter img
     {width: 200px;
@@ -1541,11 +1327,7 @@ font-size: 2rem;}
     footer .myfooter .logosfooter
     {/*Propiedades de Box Modelling*/
     margin-left: 0;
-    width: auto;
-    /*Propiedades de Flexbox*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;}
+    width: auto;}
     
     footer .myfooter .logosfooter img
     {width: 75px;
@@ -1558,7 +1340,6 @@ font-size: 2rem;}
     margin: 0;
     /*Propiedades de Flexbox*/
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: center;}
     
