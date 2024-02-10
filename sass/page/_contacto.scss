@@ -20,31 +20,35 @@ flex-direction: row;
         background-color:rgb(16, 16, 16);
         width: 75%;
 
+                .titulocontacto
+                        {@include flex (row, center, center);
+                        img
+                        {padding: 0px 20px 0px 20px;}
+                        h2
+                        {font-size: 4rem;
+                        color: $amarillototal;}};}
+                                  
+                        textarea
+                        {width: 70%;}
+                    
+                        p
+                        {padding-top: 1rem;}}
+
                 form
                 {/*Propiedades básicas*/
                 font-family: "PPSupply";
                 font-size: 15px;
                 line-height: 25px;
                 line-height: 18px;
-                    
-                        h2
-                        {font-size: 4rem;
-                            color: #ffd000;}
+                padding: 0px, 0px, 100px, 0px;                 
 
-                
-                        textarea
-                        {width: 70%;}
-                    
-                        p
-                        {padding-top: 1rem;}}}
+                        .dondevivis
+                        {line-height: 2px;
+                        padding-top: 1rem;}
 
-            
+                        .enquepuedoayudarte
+                        {padding: 20px 0px 10px 0px;
+                        display: flex;
+                        justify-content: center;}}
 
-        .dondevivis
-        {line-height: 2px;
-        padding-top: 1rem;}
-
-        .enquepuedoayudarte
-        {padding: 20px 0px 10px 0px;
-        display: flex;
-        justify-content: center;}}
+               

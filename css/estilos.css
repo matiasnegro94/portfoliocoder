@@ -437,27 +437,38 @@ footer .myfooter .derechosfooter {
   background-color: rgb(16, 16, 16);
   width: 75%;
 }
-.contactomaincontenedor .tituloyform form { /*Propiedades básicas*/
+.contactomaincontenedor .tituloyform .titulocontacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contactomaincontenedor .tituloyform .titulocontacto img {
+  padding: 0px 20px 0px 20px;
+}
+.contactomaincontenedor .tituloyform .titulocontacto h2 {
+  font-size: 4rem;
+  color: #ffd000;
+}
+.contactomaincontenedor textarea {
+  width: 70%;
+}
+.contactomaincontenedor p {
+  padding-top: 1rem;
+}
+
+form { /*Propiedades básicas*/
   font-family: "PPSupply";
   font-size: 15px;
   line-height: 25px;
   line-height: 18px;
+  padding: 0px, 0px, 100px, 0px;
 }
-.contactomaincontenedor .tituloyform form h2 {
-  font-size: 4rem;
-  color: #ffd000;
-}
-.contactomaincontenedor .tituloyform form textarea {
-  width: 70%;
-}
-.contactomaincontenedor .tituloyform form p {
-  padding-top: 1rem;
-}
-.contactomaincontenedor .dondevivis {
+form .dondevivis {
   line-height: 2px;
   padding-top: 1rem;
 }
-.contactomaincontenedor .enquepuedoayudarte {
+form .enquepuedoayudarte {
   padding: 20px 0px 10px 0px;
   display: flex;
   justify-content: center;
@@ -932,6 +943,7 @@ footer .myfooter .derechosfooter {
     justify-content: center;
     align-items: center;
     padding-bottom: 0rem;
+    width: 100%;
   }
   .titulobootstrap img {
     padding: 60px 20px 0px 20px;
@@ -948,6 +960,7 @@ footer .myfooter .derechosfooter {
     justify-content: center;
     align-items: center;
     padding-bottom: 0rem;
+    width: 100%;
   }
   .titulotienda img {
     padding: 60px 20px 0px 20px;
@@ -963,6 +976,7 @@ footer .myfooter .derechosfooter {
     justify-content: center;
     align-items: center;
     padding: 0px 0px 20px 0px;
+    width: 100%;
   }
   .titulobootstrap img {
     padding: 40px 10px 0px 10px;
@@ -989,6 +1003,7 @@ footer .myfooter .derechosfooter {
   justify-content: center;
   align-items: center;
   padding: 0px 0px 20px 0px;
+  width: 100%;
 }
 .tiendamain .titulotienda img {
   padding: 60px 10px 0px 10px;
@@ -1272,6 +1287,4 @@ footer .myfooter .derechosfooter {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- */
-
-/*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */

@@ -429,7 +429,8 @@ width: 100%;
 
 .titulobootstrap
 {@include flex (row, center, center);
-    padding-bottom: 0rem;
+padding-bottom: 0rem;
+width: 100%;
 
         img
         {padding: 60px 20px 0px 20px;}
@@ -443,7 +444,8 @@ width: 100%;
     
         .titulotienda
         {@include flex (row, center, center);
-            padding-bottom: 0rem;
+        padding-bottom: 0rem;
+        width: 100%;
         
                 img
                 {padding: 60px 20px 0px 20px;}
@@ -455,6 +457,7 @@ width: 100%;
 {.titulobootstrap
 {@include flex (row, center, center);
 padding: 0px 0px 20px 0px;
+width: 100%;
 
         img
         {padding: 40px 10px 0px 10px;
@@ -479,6 +482,7 @@ width: 100%;
     {.titulotienda
         {@include flex (row, center, center);
         padding: 0px 0px 20px 0px;
+        width: 100%;
         
                 img
                 {padding: 60px 10px 0px 10px;
