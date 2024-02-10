@@ -1,0 +1,675 @@
+/*------------------------------- inicio media queries main -------------------------------*/
+@media only screen and (max-width: 480px)
+{main 
+{margin: 0;
+width: 100%;
+justify-content: center;
+align-items: center;}}
+
+@media only screen and (min-width: 480px) and (max-width: 950px)
+
+{main
+{margin: auto;
+padding: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;}}
+
+@media only screen and (min-width: 951px) and (max-width: 1200px)
+
+{main
+{margin: auto;
+padding: 0;
+justify-content: center;
+align-items: center;}}
+  
+/*-------------------------------fin media queries main -------------------------------*/
+
+/*------------------------------- inicio media queries body -------------------------------*/
+@media only screen and (max-width: 480px)
+{body
+{min-height: auto;
+margin: 0;}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{body
+{min-height: auto;
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;}}
+
+@media only screen and (min-width: 951px) and (max-width: 1200px)
+
+{body
+{min-height: auto;
+margin: 0;
+padding: 0;}}
+/*------------------------------- fin media queries body -------------------------------*/
+
+/*------------------------------- media queries header -------------------------------*/
+@media only screen and (max-width: 480px)
+{header 
+      {.myheader
+       {display: grid;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+            .logo
+            {margin: 0px;
+            padding: 0px 70px 0px 0px;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .logoimagen
+            {padding: 0px 0px 12px 0px;
+            margin: 0px;
+                img
+                {width: 40px;
+                height: 40px;}      
+            
+            h1
+            {font-size: 2rem;}}}
+                       
+        nav
+        {grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+            ul
+            {padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;}
+            
+            .boton
+            {font-size: 1.5rem;
+            padding: 0px 0px 0px 0px;
+            font-size: 2rem;}}}}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{header 
+    {.myheader
+    {display: grid;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position:relative;
+    justify-content: center;
+
+    .logo
+    {margin: 0px;
+    padding: 0px 0px 0px 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
+        
+    .logoimagen
+    {padding: 0px 0px 23px 0px;
+    margin: 0px;
+
+        img
+        {width: 40px;
+        height: 60px;
+        padding-top: 20px;}}      
+        
+    h1
+    {font-size: 3.5rem;
+    padding: 0px 0px 5px 15px;
+    margin: 0;}}   
+    
+    nav
+    {grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 4rem;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+   
+    ul
+    {padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;}
+        
+    .boton
+    {font-size: 1.75rem;
+    padding: 0px 0px 0px 0px;
+    width: 100%;}}}}
+
+@media only screen and (min-width: 951px) and (max-width: 1200px) /*media queries header 1200*/
+{header 
+    {.myheader
+    {height: 6rem;
+    position: relative;
+
+        .logo
+        {padding-left: 3rem;
+        
+            .logoimagen
+            {padding: 0px 0px 20px 0px;
+            
+                .logoimagen img
+                {width: 50px;
+                height: 50px;}}}}}}
+      
+ @media only screen and (min-width: 1200px) and (max-width: 1500px) /*media queries header 1500*/
+ {header
+    {.myheader
+    {padding: 100px 0px 0px 0px;
+    position: relative;
+        .logoimagen
+        {padding: 0px 0px 20px 0px;}
+                
+        .logoimagen img
+        {width: 50px;
+        height: 50px;}}}}
+     
+//-------------------------- fin media queries header -------------------------
+/* -----------------------------------  inicio media queries footer ---------------------------------- */
+
+@media only screen and (max-width: 480px)
+{footer 
+    {.myfooter 
+    {height: auto;
+    position:static;
+    margin: 0;
+    @include flex (column, flex-end, center);
+
+    .logofooter
+    {padding-left: 0px;
+    padding-top: 0px;
+        img
+        {width: 15rem;
+        height: 3rem;
+        padding: 0;
+        margin: 0;}}
+
+    .logosfooter
+    {margin-left: 0;
+    width: 100%;
+        img
+        {width: 30px;
+        height: 30px;
+        padding: 0;}}
+
+    .derechosfooter p
+    {margin: 0px;}}}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{footer 
+    {.myfooter 
+    {height: auto;
+    width: 100%;
+    position: static;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    footer .myfooter .logofooter
+    {padding-left: 0px;
+    padding-top: 0px;}
+
+       .logofooter 
+            {img
+                {width: 100%;
+                height: auto;
+                padding: 0;
+                margin: 0;}}
+
+        .logosfooter
+        {margin: 0;
+        width: 100%;    
+            img
+            {width: 80px;
+            height: 60px;
+            padding: 0 10px 0 10px;}}
+
+        .derechosfooter
+        {padding: 0px;
+        margin: 0;
+        align-items: center;    
+            p
+            {margin: 0px;
+            padding-top: 1rem;
+            font-size: 1.5rem;}}}}}
+
+@media only screen and (min-width: 951px) and (max-width: 1200px) /*media queries footer*/
+{footer
+    {.myfooter 
+    {height: auto;
+    position:static;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .logofooter
+    {padding: 0;
+    
+        img
+        {width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;}}
+       
+   .logosfooter
+    {margin-left: 0;
+    width: 100%;
+
+        img
+        {width: 95px;
+        height: 50px;
+        padding: 0px 25px 0px 25px;}} 
+
+    .derechosfooter
+    {padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+        p
+        {margin: 0px;
+        padding-top: 1rem;
+        font-size: 1rem;}}}}}
+/* -----------------------------------  fin media queries footer ---------------------------------- */
+/* -------------------------------- media queries quiensoy ------------------------------ */
+
+@media only screen and (max-width: 480px)
+{.quiensoycontenido
+{padding-top: 0rem;
+margin: auto;
+@include flex (column, center, center);      
+        .quiensoyimagen
+        {width: 100%;
+        padding-left: 3rem;
+            img
+            {width: 400px;
+            height: 600px;}}
+        
+        .quiensoytexto
+        {width: 80%;
+            .quiensoytitulo
+        {@include flex (row, space-between, center);}
+            p
+            {font-size: 20px;}
+            h2
+            {font-size: 2rem;
+            font-family: $fontpixel;
+            color: $amarillototal;}}}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{.quiensoycontenido
+{padding-top: 0rem;
+@include flex (column, center, center);
+width: 100%;
+
+.quiensoyimagen
+{width: 100%;
+padding-left: 3rem;
+
+    img
+    {width:500px;
+    height: 800px;}}}
+
+.quiensoytexto
+{width: 80%;
+
+    p
+    {font-size: 2rem;
+    line-height: 2.53rem;}
+
+    h2
+    {font-size: 3rem;}
+
+    .quiensoytitulo 
+    {img
+    {width: 40px;
+    height: 40px;}}}}
+
+/* --------------------------------------- fin media queries quiensoy ---------------------------------*/
+/* --------------------------------- media queries secciones del index -------------------------------*/
+
+@media only screen and (max-width: 480px)
+{/*PRINCIPALES SECCIONES DEL INDEX*/
+.seccionesfila
+{/*Propiedades de Flexbox*/
+@include flex (column, center, center);
+margin: auto;
+width: 100%;
+
+        .secciones
+        {font-family: $fontpixel;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 1rem;
+        border-color: $negroclaro;
+        margin: 0;
+        @include flex (column, center, center);}
+
+        a
+            {img
+            {width: 400px;
+            height: 400px;}} 
+
+        h3
+        {font-size: 2rem;}}} 
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{.seccionesfila
+{@include flex (column, center, center);
+margin: 0;
+    
+        .secciones
+        {font-family: $fontpixel;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 1rem;
+        border-color: $negroclaro;
+        margin: 0;
+        @include flex (column, center, center);}
+
+        a
+                {img 
+                {width: 600px;
+                height: 600px;}} 
+
+        h3
+        {font-size: 2rem;}}}
+
+@media only screen and (min-width: 951px) and (max-width: 1200px)
+{.seccionesfila
+    { a {img 
+        {width: 400px;
+        height: 400px;}}}}
+/* --------------------------------- fin media queries index -------------------------------*/
+
+/* ------------------------ media queries bootstrap ------------------------------- */
+/*CONFIGURACIÓN DE BOOTSTRAP*/
+@media only screen and (max-width: 480px)
+{.card-group
+{margin-top: 0rem;
+width: 100%;}
+    
+.card
+{font-size: 1.5rem;}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{.card-group
+{margin-top: 0rem;
+width: 100%;}
+    
+.card
+{font-size: 1.5rem;}}
+
+@media only screen and (min-width: 481px) and (max-width: 575px)
+{.card
+{font-size: 3rem;}}
+/* --------------------------- fin media queries bootstrap --------------------------------- */
+
+/* ----------------------------- media queries bio ---------------------------------- */
+
+@media only screen and (max-width: 480px)
+{/*SECCIÓN BIO*/
+.bioimgtxt
+{@include flex (column, default, default);
+margin: 0rem 0rem 0rem 0rem;
+padding: 0rem 0rem 0rem 0rem;
+width: 100%;}
+
+.bioimg
+{@include flex (row, default, default);
+padding: 3rem 0rem 0rem 0rem;}
+
+.bioimg img
+{width: 480px;
+height: 480px;}
+
+.biotituloytext
+{padding: 20px;}
+
+.biotitulo
+{width: auto;}
+
+.biotituloytext p
+{font-size: 20px;
+padding: 0;}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{/*SECCIÓN BIO*/
+.bioimgtxt
+{@include flex (column, default, default);
+margin: 0rem 0rem 0rem 0rem;
+padding: 0rem 0rem 0rem 0rem;
+width: 100%;}
+
+.bioimg
+{@include flex (row, default, default);
+padding: 3rem 0rem 0rem 0rem;
+margin: auto;}
+
+.bioimg img
+{width: 900px;
+height: 900px;}
+
+.biotituloytext
+{padding: 20px;}
+
+.biotitulo
+{width: auto;
+width: 50%;}
+
+.biotitulo h2
+{font-size: 6rem;}
+
+.biotitulo img
+{width: 80px;
+height: 80px;}
+
+.biotituloytext p
+{font-size: 2rem;
+line-height: 3rem;
+padding: 0;}}
+
+@media only screen and (min-width: 951px) and (max-width: 1200px)
+{/*SECCIÓN BIO*/
+.bioimgtxt
+{@include flex (column, default, default);
+margin: 0rem 0rem 0rem 0rem;
+padding: 0rem 0rem 0rem 0rem;
+width: 100%;}
+
+.bioimg
+{@include flex (row, default, default);
+padding: 3rem 0rem 0rem 0rem;
+margin: auto;
+width: 50%;}
+
+.biotituloytext
+{@include flex (column, center, center);
+padding: 20px;}
+
+.biotitulo
+{width: auto;
+@include flex (row, space-between, center);
+width: 50%;}
+
+.biotitulo img
+{width: 50px;
+height: 50px;}
+
+.biotituloytext p
+{font-size: 1.2rem;
+font-family: $fonttext;
+line-height: 3rem;
+@include flex (row, default, default);
+padding: 0;}}
+
+
+/* -------------------------------- fin media queries bio ------------------------------------- */
+
+/* ------------------------------- media queries de contacto------------------------------------- */
+
+@media only screen and (max-width: 480px)
+{.contactomaincontenedor
+{display: grid;
+width: 100%;
+
+        .contactoimg
+        {grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding: 0;
+        @include flex (row, center, center);
+        margin: auto; /*IMPORTANTÍSIMO PARA QUE EL CONTENIDO DE UN GRID SE CENTRE*/
+            
+                img
+                {width: 400px;
+                height: 400px;}}
+
+        .tituloyform
+        {padding: 0px 0px 0px 0px;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+                h2
+                {font-size: 3rem;
+                padding: 0px, 0px, 0px, 0px;}
+
+                form
+                {font-size: 20px;
+                line-height: 25px;
+                margin-bottom: 10px;
+                    
+                        .label
+                        {@include flex (column, center, center);
+                        padding: 0.5rem;}
+                    
+                        p
+                        {padding-top: 1rem;}
+                        
+                        .inputnombre
+                        {width: 300px;}
+
+                        .dondevivis
+                        {line-height: 2px;
+                        padding-top: 1rem;}
+
+                        .enquepuedoayudarte
+                        {padding-top: 40px;}
+
+                        .elementosalfinal
+                        {line-height: 1px;
+                        padding-top: 1rem;}
+
+                        .submitreset
+                        {margin-top: 1rem;}}}}}
+
+@media only screen and (min-width: 481px) and (max-width: 950px)
+{.contactomaincontenedor
+{padding: 0;
+margin: 0;
+display: grid;
+
+        .contactoimg
+        {grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding: 0;
+        margin: auto; /*IMPORTANTÍSIMO PARA QUE EL CONTENIDO DE UN GRID SE CENTRE*/
+        @include flex (row, center, center);
+
+                img
+                {width: 680px;
+                height: 680px;
+                padding: 0rem 0rem 0rem 0rem;
+                margin: 0;}}
+
+
+
+        .tituloyform
+        {padding-top: 0rem;
+        padding-right: 0rem;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        background-color: $negroclaro;
+        width: 100%;
+        padding-bottom: 3rem;
+
+                h2
+                {font-size: 3rem;}
+
+                form
+                {font-size: 2rem;
+                line-height: 25px;
+                margin-bottom: 10px;
+                
+                    .label
+                    {@include flex (column, center, center);
+                    padding: 1rem;}
+
+                    .inputnombre
+                    {width: 300px;}
+
+                    .email 
+                    {width: 550px;}
+
+                    .enquepuedoayudarte
+                    {@include flex (row, center, default);
+                    padding-top: 50px;}
+
+                    .textarea
+                    {margin-top: 2rem;}
+
+                    .dondevivispregunta
+                    {padding-bottom: 1rem;}
+
+                    .elementosalfinal
+                    {line-height: 1px;
+                    padding-top: 3rem;}
+
+                    .submitreset
+                    {margin-top: 1rem;
+                    padding-top: 10px;}}}}}
+
+
+/* ------------------------------- fin de media queries de contacto ------------------------------------- */

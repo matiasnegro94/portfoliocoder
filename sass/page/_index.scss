@@ -1,0 +1,59 @@
+/*SECCIÓN "QUIÉN SOY" DEL INDEX*/
+.quiensoycontenido
+{width: 100%;/*Agregué el porcentaje para después dividir el div en dos*/
+@include flex (row, default, default);}
+
+.quiensoytitulo
+{width: 70%;
+@include flex (row, space-between, center);}
+
+.quiensoytitulo img
+{width: 30px;
+height: 30px;}
+
+h2
+{font-size: 2.5rem;
+font-family: $fontpixel;
+color: $amarillototal;}
+
+.quiensoyimagen
+{margin-top: 2rem;
+width: 50%;}
+
+.quiensoyimagen img
+{width:375px;
+height: 600px;}
+
+.quiensoytexto
+{margin: 2rem 0 0 0;
+width: 35%;
+@include flex (column, center, center);}
+
+.quiensoytexto p
+{font-size: 18px;
+font-family: $fonttext;
+line-height: 21px;
+padding-top: 1rem;}
+
+.quiensoytexto span
+{color:$amarillofuerte;}
+
+
+/*PRINCIPALES SECCIONES DEL INDEX*/
+.seccionesfila
+        {@include flex (row, center, default);
+
+        a {img
+        {width: 495px;
+        height: 495px;}}
+
+        h3
+        {font-size: 2rem;}
+
+        .secciones
+        {font-family: $fontpixel;
+        font-size: 20px;
+        border-style: solid;
+        border-width: 1rem;
+        border-color: $negroclaro;
+        @include flex (column, default, default);}}

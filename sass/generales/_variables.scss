@@ -1,0 +1,74 @@
+/*TIPOGRAFÍAS LOCALES*/
+@font-face
+{font-family: "Myriad Pro Regular"; 
+src: url("../media/fonts/MyriadPro-Regular.otf");} //fuente logo
+@font-face
+{font-family: "Silkscreen Regular"; 
+src: url("../media/fonts/Silkscreen-Regular.ttf");} //fuente pixel
+@font-face
+{font-family: "PPSupply"; 
+src: url("../media/fonts/PPSupplyMono-Regular.otf");} //fuente texto
+
+$fontlogo: "Myriad Pro Regular";
+$fontpixel: "Silkscreen Regular";
+$fonttext: "PPSupply";
+
+//COLORES
+
+$amarilloclaro:#d8d697;
+$amarillofuerte:#faf687;
+$amarillototal:#ffd000;
+$hover:#ff0000;
+$negroclaro:rgb(16, 16, 16);
+$negrototal:black;
+$gris: rgb(47, 47, 45);
+
+//MIXING
+
+@mixin flex ($direction, $justify, $align)
+{display: flex;
+flex-direction: $direction;
+justify-content: $justify;
+align-items: $align;}
+
+/*ESTILOS GENERALES*/
+
+/*RESET CSS*/
+*
+{margin:0;
+padding:0;
+box-sizing: border-box;
+
+    html
+    {width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;}
+
+    p
+    {color: $amarilloclaro;}
+
+    a
+    {text-decoration:none;
+    color: $amarillofuerte;}
+
+    a:hover
+    {text-decoration:none;
+    color: $hover;}
+
+    ul
+    {list-style: none;
+    margin-bottom: 0; /*Este "margin bottom es la única forma de que el "nav" no se salga de lugar al utilizar Bootstrap por alguna razón*/}
+
+    li
+    {display: inline-block;}
+
+    h2
+    {color: $amarillototal;
+    font-size: 3rem;
+    font-family: $fontpixel;}
+
+    .h2paginas
+    {padding-top: 4rem;}
+
+}

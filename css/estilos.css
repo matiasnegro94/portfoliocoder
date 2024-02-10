@@ -1,3 +1,1152 @@
+@charset "UTF-8";
+/*TIPOGRAFÍAS LOCALES*/
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../media/fonts/MyriadPro-Regular.otf");
+}
+@font-face {
+  font-family: "Silkscreen Regular";
+  src: url("../media/fonts/Silkscreen-Regular.ttf");
+}
+@font-face {
+  font-family: "PPSupply";
+  src: url("../media/fonts/PPSupplyMono-Regular.otf");
+}
+/*ESTILOS GENERALES*/
+/*RESET CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+* p {
+  color: #d8d697;
+}
+* a {
+  text-decoration: none;
+  color: #faf687;
+}
+* a:hover {
+  text-decoration: none;
+  color: #ff0000;
+}
+* ul {
+  list-style: none;
+  margin-bottom: 0; /*Este "margin bottom es la única forma de que el "nav" no se salga de lugar al utilizar Bootstrap por alguna razón*/
+}
+* li {
+  display: inline-block;
+}
+* h2 {
+  color: #ffd000;
+  font-size: 3rem;
+  font-family: "Silkscreen Regular";
+}
+* .h2paginas {
+  padding-top: 4rem;
+}
 
+/*MAIN*/
+main {
+  background-color: black;
+  color: #d8d697;
+  flex: 1;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-/*# sourceMappingURL=estilos.css.map */
+/*BODY*/
+body {
+  background-color: rgb(16, 16, 16);
+  color: #d8d697;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/*HEADER*/
+header .myheader {
+  background-color: rgb(16, 16, 16);
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 50px;
+  padding: 0px 0px 0px 0px;
+  margin: 0 0 0 0; /*Forma abreviada*/
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .myheader .logo {
+  margin-bottom: 0;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .myheader .logo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd000;
+  font-family: "Myriad Pro Regular";
+  padding: 0px 0px 0px 15px;
+  margin: 0;
+}
+header .myheader .logo h1:hover {
+  font-weight: 700;
+  color: #ff0000;
+  padding: 15px 0rem 0rem 20px;
+}
+header .myheader .logo .logoimagen {
+  padding: 0px 0px 10px 0px;
+}
+header .myheader .logo img {
+  width: 25px;
+  height: 25px;
+}
+header nav {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+header nav .boton {
+  background-color: black;
+  font-family: "Silkscreen Regular";
+  font-size: 20px;
+  border-style: solid;
+  border-width: 0, 5rem 0, 5rem 0, 5rem 0, 5rem;
+  border-color: rgb(47, 47, 45) rgb(47, 47, 45) black rgb(47, 47, 45);
+  margin: 0 0 0 0;
+  padding: 0rem 1rem 0 1rem;
+}
+header nav .boton:hover {
+  background-color: rgb(47, 47, 45);
+  border-width: 0 0 0 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* FOOTER */
+/*Luego de añadir el código de enlace a Bootstrap en todos mis archivos HTML, tuve que rehacer el código del footer, encerrando todo el contenido que había dentro del footer en un div nuevo y cambiar la position de sticky a fixed para que el contenido del footer volviera a comportarse como lo hacía anteriormente. Desconozco los motivos de este inesperado comportamiento*/
+footer .myfooter {
+  background-color: black;
+  border-style: solid;
+  border-width: 0, 5rem;
+  border-color: rgb(16, 16, 16);
+  width: 100%;
+  height: 2rem;
+  position: fixed;
+  bottom: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .myfooter .logofooter {
+  padding-left: 20px;
+  padding-top: 0px;
+}
+footer .myfooter .logofooter img {
+  width: 100px;
+  height: 25px;
+}
+footer .myfooter .logosfooter {
+  margin-left: 9rem;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .myfooter .logosfooter img {
+  width: 25px;
+  height: 25px;
+}
+footer .myfooter .derechosfooter {
+  padding-top: 15px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*SECCIÓN "QUIÉN SOY" DEL INDEX*/
+.quiensoycontenido {
+  width: 100%; /*Agregué el porcentaje para después dividir el div en dos*/
+  display: flex;
+  flex-direction: row;
+  justify-content: default;
+  align-items: default;
+}
+
+.quiensoytitulo {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiensoytitulo img {
+  width: 30px;
+  height: 30px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Silkscreen Regular";
+  color: #ffd000;
+}
+
+.quiensoyimagen {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.quiensoyimagen img {
+  width: 375px;
+  height: 600px;
+}
+
+.quiensoytexto {
+  margin: 2rem 0 0 0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiensoytexto p {
+  font-size: 18px;
+  font-family: "PPSupply";
+  line-height: 21px;
+  padding-top: 1rem;
+}
+
+.quiensoytexto span {
+  color: #faf687;
+}
+
+/*PRINCIPALES SECCIONES DEL INDEX*/
+.seccionesfila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: default;
+}
+.seccionesfila a img {
+  width: 495px;
+  height: 495px;
+}
+.seccionesfila h3 {
+  font-size: 2rem;
+}
+.seccionesfila .secciones {
+  font-family: "Silkscreen Regular";
+  font-size: 20px;
+  border-style: solid;
+  border-width: 1rem;
+  border-color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: column;
+  justify-content: default;
+  align-items: default;
+}
+
+/*CONFIGURACIÓN DE BOOTSTRAP*/
+.card {
+  background-color: black;
+  font-family: "PPSupply";
+  font-size: 13px;
+}
+
+.card-title {
+  color: #ffd000;
+}
+
+.tiendamain h2 {
+  font-size: 5rem;
+  font-family: "Silkscreen Regular";
+  font-weight: 900;
+}
+
+/*SECCIÓN BIO*/
+.bioimgtxt {
+  font-size: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: default;
+  align-items: default;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.bioimg {
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem 1rem 0rem;
+}
+
+.bioimg img {
+  width: 500px;
+  height: 500px;
+}
+
+.biotituloytext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.biotitulo {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.biotitulo h2 {
+  font-size: 4rem;
+  color: #ffd000;
+}
+
+.biotitulo img {
+  width: 40px;
+  height: 40px;
+}
+
+.biotituloytext p {
+  font-size: 23px;
+  font-family: "PPSupply";
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: default;
+  align-items: default;
+  padding: 4rem;
+}
+
+/*CONFIGURACIÓN DE CONTACTO*/
+.contactomaincontenedor {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contactomaincontenedor .contactoimg {
+  width: 50%;
+  padding: 6rem 0rem 0rem 0rem;
+}
+.contactomaincontenedor .contactoimg img {
+  width: 500px;
+  height: 500px;
+}
+.contactomaincontenedor .tituloyform {
+  padding-top: 6rem;
+  padding-right: 2rem;
+  background-color: rgb(16, 16, 16);
+  width: 75%;
+}
+.contactomaincontenedor .tituloyform form { /*Propiedades básicas*/
+  font-family: "PPSupply";
+  font-size: 15px;
+  line-height: 25px;
+  line-height: 18px;
+}
+.contactomaincontenedor .tituloyform form h2 {
+  font-size: 4rem;
+  color: #ffd000;
+}
+.contactomaincontenedor .tituloyform form textarea {
+  width: 70%;
+}
+.contactomaincontenedor .tituloyform form p {
+  padding-top: 1rem;
+}
+.contactomaincontenedor .dondevivis {
+  line-height: 2px;
+  padding-top: 1rem;
+}
+.contactomaincontenedor .enquepuedoayudarte {
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+/*------------------------------- inicio media queries main -------------------------------*/
+@media only screen and (max-width: 480px) {
+  main {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 950px) {
+  main {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px) {
+  main {
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*-------------------------------fin media queries main -------------------------------*/
+/*------------------------------- inicio media queries body -------------------------------*/
+@media only screen and (max-width: 480px) {
+  body {
+    min-height: auto;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  body {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px) {
+  body {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*------------------------------- fin media queries body -------------------------------*/
+/*------------------------------- media queries header -------------------------------*/
+@media only screen and (max-width: 480px) {
+  header .myheader {
+    display: grid;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  header .myheader .logo {
+    margin: 0px;
+    padding: 0px 70px 0px 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .myheader .logo .logoimagen {
+    padding: 0px 0px 12px 0px;
+    margin: 0px;
+  }
+  header .myheader .logo .logoimagen img {
+    width: 40px;
+    height: 40px;
+  }
+  header .myheader .logo .logoimagen h1 {
+    font-size: 2rem;
+  }
+  header .myheader nav {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  header .myheader nav ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  header .myheader nav .boton {
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 0px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  header .myheader {
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+  }
+  header .myheader .logo {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header .myheader .logoimagen {
+    padding: 0px 0px 23px 0px;
+    margin: 0px;
+  }
+  header .myheader .logoimagen img {
+    width: 40px;
+    height: 60px;
+    padding-top: 20px;
+  }
+  header .myheader h1 {
+    font-size: 3.5rem;
+    padding: 0px 0px 5px 15px;
+    margin: 0;
+  }
+  header nav {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 4rem;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  header nav ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  header nav .boton {
+    font-size: 1.75rem;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px) {
+  header .myheader {
+    height: 6rem;
+    position: relative;
+  }
+  header .myheader .logo {
+    padding-left: 3rem;
+  }
+  header .myheader .logo .logoimagen {
+    padding: 0px 0px 20px 0px;
+  }
+  header .myheader .logo .logoimagen .logoimagen img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  header .myheader {
+    padding: 100px 0px 0px 0px;
+    position: relative;
+  }
+  header .myheader .logoimagen {
+    padding: 0px 0px 20px 0px;
+  }
+  header .myheader .logoimagen img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* -----------------------------------  inicio media queries footer ---------------------------------- */
+@media only screen and (max-width: 480px) {
+  footer .myfooter {
+    height: auto;
+    position: static;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .myfooter .logofooter {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  footer .myfooter .logofooter img {
+    width: 15rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+  footer .myfooter .logosfooter {
+    margin-left: 0;
+    width: 100%;
+  }
+  footer .myfooter .logosfooter img {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+  footer .myfooter .derechosfooter p {
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  footer .myfooter {
+    height: auto;
+    width: 100%;
+    position: static;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  footer .myfooter footer .myfooter .logofooter {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  footer .myfooter .logofooter img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  footer .myfooter .logosfooter {
+    margin: 0;
+    width: 100%;
+  }
+  footer .myfooter .logosfooter img {
+    width: 80px;
+    height: 60px;
+    padding: 0 10px 0 10px;
+  }
+  footer .myfooter .derechosfooter {
+    padding: 0px;
+    margin: 0;
+    align-items: center;
+  }
+  footer .myfooter .derechosfooter p {
+    margin: 0px;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px) {
+  footer .myfooter {
+    height: auto;
+    position: static;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .myfooter .logofooter {
+    padding: 0;
+  }
+  footer .myfooter .logofooter img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  footer .myfooter .logosfooter {
+    margin-left: 0;
+    width: 100%;
+  }
+  footer .myfooter .logosfooter img {
+    width: 95px;
+    height: 50px;
+    padding: 0px 25px 0px 25px;
+  }
+  footer .myfooter .derechosfooter {
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .myfooter .derechosfooter p {
+    margin: 0px;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+}
+/* -----------------------------------  fin media queries footer ---------------------------------- */
+/* -------------------------------- media queries quiensoy ------------------------------ */
+@media only screen and (max-width: 480px) {
+  .quiensoycontenido {
+    padding-top: 0rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quiensoycontenido .quiensoyimagen {
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .quiensoycontenido .quiensoyimagen img {
+    width: 400px;
+    height: 600px;
+  }
+  .quiensoycontenido .quiensoytexto {
+    width: 80%;
+  }
+  .quiensoycontenido .quiensoytexto .quiensoytitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quiensoycontenido .quiensoytexto p {
+    font-size: 20px;
+  }
+  .quiensoycontenido .quiensoytexto h2 {
+    font-size: 2rem;
+    font-family: "Silkscreen Regular";
+    color: #ffd000;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  .quiensoycontenido {
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .quiensoycontenido .quiensoyimagen {
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .quiensoycontenido .quiensoyimagen img {
+    width: 500px;
+    height: 800px;
+  }
+  .quiensoytexto {
+    width: 80%;
+  }
+  .quiensoytexto p {
+    font-size: 2rem;
+    line-height: 2.53rem;
+  }
+  .quiensoytexto h2 {
+    font-size: 3rem;
+  }
+  .quiensoytexto .quiensoytitulo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* --------------------------------------- fin media queries quiensoy ---------------------------------*/
+/* --------------------------------- media queries secciones del index -------------------------------*/
+@media only screen and (max-width: 480px) { /*PRINCIPALES SECCIONES DEL INDEX*/
+  .seccionesfila { /*Propiedades de Flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+  .seccionesfila .secciones {
+    font-family: "Silkscreen Regular";
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: rgb(16, 16, 16);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionesfila a img {
+    width: 400px;
+    height: 400px;
+  }
+  .seccionesfila h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  .seccionesfila {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .seccionesfila .secciones {
+    font-family: "Silkscreen Regular";
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: rgb(16, 16, 16);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionesfila a img {
+    width: 600px;
+    height: 600px;
+  }
+  .seccionesfila h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px) {
+  .seccionesfila a img {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* --------------------------------- fin media queries index -------------------------------*/
+/* ------------------------ media queries bootstrap ------------------------------- */
+/*CONFIGURACIÓN DE BOOTSTRAP*/
+@media only screen and (max-width: 480px) {
+  .card-group {
+    margin-top: 0rem;
+    width: 100%;
+  }
+  .card {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  .card-group {
+    margin-top: 0rem;
+    width: 100%;
+  }
+  .card {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  .card {
+    font-size: 3rem;
+  }
+}
+/* --------------------------- fin media queries bootstrap --------------------------------- */
+/* ----------------------------- media queries bio ---------------------------------- */
+@media only screen and (max-width: 480px) { /*SECCIÓN BIO*/
+  .bioimgtxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: default;
+    align-items: default;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    width: 100%;
+  }
+  .bioimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: default;
+    align-items: default;
+    padding: 3rem 0rem 0rem 0rem;
+  }
+  .bioimg img {
+    width: 480px;
+    height: 480px;
+  }
+  .biotituloytext {
+    padding: 20px;
+  }
+  .biotitulo {
+    width: auto;
+  }
+  .biotituloytext p {
+    font-size: 20px;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) { /*SECCIÓN BIO*/
+  .bioimgtxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: default;
+    align-items: default;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    width: 100%;
+  }
+  .bioimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: default;
+    align-items: default;
+    padding: 3rem 0rem 0rem 0rem;
+    margin: auto;
+  }
+  .bioimg img {
+    width: 900px;
+    height: 900px;
+  }
+  .biotituloytext {
+    padding: 20px;
+  }
+  .biotitulo {
+    width: auto;
+    width: 50%;
+  }
+  .biotitulo h2 {
+    font-size: 6rem;
+  }
+  .biotitulo img {
+    width: 80px;
+    height: 80px;
+  }
+  .biotituloytext p {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px) { /*SECCIÓN BIO*/
+  .bioimgtxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: default;
+    align-items: default;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+    width: 100%;
+  }
+  .bioimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: default;
+    align-items: default;
+    padding: 3rem 0rem 0rem 0rem;
+    margin: auto;
+    width: 50%;
+  }
+  .biotituloytext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .biotitulo {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+  .biotitulo img {
+    width: 50px;
+    height: 50px;
+  }
+  .biotituloytext p {
+    font-size: 1.2rem;
+    font-family: "PPSupply";
+    line-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: default;
+    align-items: default;
+    padding: 0;
+  }
+}
+/* -------------------------------- fin media queries bio ------------------------------------- */
+/* ------------------------------- media queries de contacto------------------------------------- */
+@media only screen and (max-width: 480px) {
+  .contactomaincontenedor {
+    display: grid;
+    width: 100%;
+  }
+  .contactomaincontenedor .contactoimg {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /*IMPORTANTÍSIMO PARA QUE EL CONTENIDO DE UN GRID SE CENTRE*/
+  }
+  .contactomaincontenedor .contactoimg img {
+    width: 400px;
+    height: 400px;
+  }
+  .contactomaincontenedor .tituloyform {
+    padding: 0px 0px 0px 0px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactomaincontenedor .tituloyform h2 {
+    font-size: 3rem;
+    padding: 0px, 0px, 0px, 0px;
+  }
+  .contactomaincontenedor .tituloyform form {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .contactomaincontenedor .tituloyform form .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .contactomaincontenedor .tituloyform form p {
+    padding-top: 1rem;
+  }
+  .contactomaincontenedor .tituloyform form .inputnombre {
+    width: 300px;
+  }
+  .contactomaincontenedor .tituloyform form .dondevivis {
+    line-height: 2px;
+    padding-top: 1rem;
+  }
+  .contactomaincontenedor .tituloyform form .enquepuedoayudarte {
+    padding-top: 40px;
+  }
+  .contactomaincontenedor .tituloyform form .elementosalfinal {
+    line-height: 1px;
+    padding-top: 1rem;
+  }
+  .contactomaincontenedor .tituloyform form .submitreset {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+  .contactomaincontenedor {
+    padding: 0;
+    margin: 0;
+    display: grid;
+  }
+  .contactomaincontenedor .contactoimg {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 0;
+    margin: auto; /*IMPORTANTÍSIMO PARA QUE EL CONTENIDO DE UN GRID SE CENTRE*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactomaincontenedor .contactoimg img {
+    width: 680px;
+    height: 680px;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0;
+  }
+  .contactomaincontenedor .tituloyform {
+    padding-top: 0rem;
+    padding-right: 0rem;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: rgb(16, 16, 16);
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .contactomaincontenedor .tituloyform h2 {
+    font-size: 3rem;
+  }
+  .contactomaincontenedor .tituloyform form {
+    font-size: 2rem;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .contactomaincontenedor .tituloyform form .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .contactomaincontenedor .tituloyform form .inputnombre {
+    width: 300px;
+  }
+  .contactomaincontenedor .tituloyform form .email {
+    width: 550px;
+  }
+  .contactomaincontenedor .tituloyform form .enquepuedoayudarte {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: default;
+    padding-top: 50px;
+  }
+  .contactomaincontenedor .tituloyform form .textarea {
+    margin-top: 2rem;
+  }
+  .contactomaincontenedor .tituloyform form .dondevivispregunta {
+    padding-bottom: 1rem;
+  }
+  .contactomaincontenedor .tituloyform form .elementosalfinal {
+    line-height: 1px;
+    padding-top: 3rem;
+  }
+  .contactomaincontenedor .tituloyform form .submitreset {
+    margin-top: 1rem;
+    padding-top: 10px;
+  }
+}
+/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */

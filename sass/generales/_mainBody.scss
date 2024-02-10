@@ -1,0 +1,21 @@
+/*MAIN*/
+main
+{background-color: $negrototal;
+color: $amarilloclaro;
+flex: 1;
+width: 100%;
+min-width: 100%;
+max-width: 100%;
+overflow-x: hidden;}
+
+/*BODY*/
+body
+{background-color: $negroclaro;
+color: $amarilloclaro;
+text-align: center;
+@include flex (column, inherit, inherit);
+min-height: 100vh;
+width: 100%;
+min-width: 100%;
+max-width: 100%;
+overflow-x: hidden;}

@@ -1,0 +1,50 @@
+/*CONFIGURACIÓN DE CONTACTO*/
+.contactomaincontenedor
+{padding-top: 2rem;
+width: 100%;
+display: flex;
+flex-direction: row;
+
+        .contactoimg
+        {width: 50%;
+        padding: 6rem 0rem 0rem 0rem;
+
+                img
+                {width: 500px;
+                height: 500px;}}
+
+
+        .tituloyform
+        {padding-top: 6rem;
+        padding-right: 2rem;
+        background-color:rgb(16, 16, 16);
+        width: 75%;
+
+                form
+                {/*Propiedades básicas*/
+                font-family: "PPSupply";
+                font-size: 15px;
+                line-height: 25px;
+                line-height: 18px;
+                    
+                        h2
+                        {font-size: 4rem;
+                            color: #ffd000;}
+
+                
+                        textarea
+                        {width: 70%;}
+                    
+                        p
+                        {padding-top: 1rem;}}}
+
+            
+
+        .dondevivis
+        {line-height: 2px;
+        padding-top: 1rem;}
+
+        .enquepuedoayudarte
+        {padding: 20px 0px 10px 0px;
+        display: flex;
+        justify-content: center;}}

@@ -1,0 +1,37 @@
+/*SECCIÓN BIO*/
+.bioimgtxt
+{font-size: 35px;
+@include flex (row, default, default);
+margin: 0rem 1rem 0rem 1rem;
+padding: 3rem 1rem 1rem 1rem;}
+
+.bioimg
+{background-color: $negroclaro;
+@include flex (row, center, center);
+padding: 3rem 1rem 1rem 0rem;}
+
+.bioimg img
+{width: 500px;
+height: 500px;}
+
+.biotituloytext
+{@include flex (column, center, center);}
+
+.biotitulo
+{width: 30%;
+@include flex (row, space-between, center);}
+
+.biotitulo h2
+{font-size: 4rem;
+color: $amarillototal;}
+
+.biotitulo img
+{width: 40px;
+height: 40px;}
+
+.biotituloytext p
+{font-size: 23px;
+font-family: $fonttext;
+line-height: 30px;
+@include flex (row, default, default);
+padding: 4rem;}
