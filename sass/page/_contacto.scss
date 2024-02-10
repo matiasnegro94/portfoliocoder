@@ -22,21 +22,20 @@ flex-direction: row;
 
                 .titulocontacto
                         {@include flex (row, center, center);
-                        img
-                        {padding: 0px 20px 0px 20px;}
-                        h2
-                        {font-size: 4rem;
-                        color: $amarillototal;}};}
+                                img
+                                {padding: 0px 20px 0px 20px;}
+                                h2
+                                {font-size: 4rem;
+                                color: $amarillototal;}}
                                   
-                        textarea
-                        {width: 70%;}
-                    
-                        p
-                        {padding-top: 1rem;}}
+                textarea
+                {width: 70%;}
+                
+                p
+                {padding-top: 1rem;}}
 
                 form
-                {/*Propiedades básicas*/
-                font-family: "PPSupply";
+                {font-family: $fonttext;
                 font-size: 15px;
                 line-height: 25px;
                 line-height: 18px;
@@ -48,7 +47,4 @@ flex-direction: row;
 
                         .enquepuedoayudarte
                         {padding: 20px 0px 10px 0px;
-                        display: flex;
-                        justify-content: center;}}
-
-               
+                        @include flex (row, center, default);}}} 

@@ -450,28 +450,29 @@ footer .myfooter .derechosfooter {
   font-size: 4rem;
   color: #ffd000;
 }
-.contactomaincontenedor textarea {
+.contactomaincontenedor .tituloyform textarea {
   width: 70%;
 }
-.contactomaincontenedor p {
+.contactomaincontenedor .tituloyform p {
   padding-top: 1rem;
 }
-
-form { /*Propiedades básicas*/
+.contactomaincontenedor form {
   font-family: "PPSupply";
   font-size: 15px;
   line-height: 25px;
   line-height: 18px;
   padding: 0px, 0px, 100px, 0px;
 }
-form .dondevivis {
+.contactomaincontenedor form .dondevivis {
   line-height: 2px;
   padding-top: 1rem;
 }
-form .enquepuedoayudarte {
+.contactomaincontenedor form .enquepuedoayudarte {
   padding: 20px 0px 10px 0px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: default;
 }
 
 /*------------------------------- inicio media queries main -------------------------------*/
