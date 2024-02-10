@@ -15,6 +15,7 @@ header
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    z-index: 2;
     
         .logo
         {margin-bottom: 0;
@@ -28,10 +29,21 @@ header
             font-family: $fontlogo;
             padding: 0px 0px 0px 15px;
             margin: 0;
+            animation-name: animaciontitulo;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            animation-delay: 0;
             &:hover
             {font-weight: 700;
             color: $hover;
             padding: 15px 0rem 0rem 20px;}}
+
+            @keyframes animaciontitulo
+                {0%
+                {color: $hover;}
+                
+                100%
+                {color: $amarillototal;}}
 
             .logoimagen
                 {padding: 0px 0px 10px 0px;}
@@ -53,13 +65,18 @@ header
         border-width: 0,5rem 0,5rem 0,5rem 0,5rem;
         border-color: $gris $gris $negrototal $gris;
         margin: 0 0 0 0;
-        padding: 0rem 1rem 0 1rem;}
-        
-        .boton:hover
-        {background-color: $gris;
-        border-width: 0 0 0 0;
-        font-size: 25px;
-        font-weight: 700;}}}
+        padding: 0rem 1rem 0 1rem;
+        animation-name: animacionboton;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        animation-delay: 0;}
+
+        @keyframes animacionboton
+            {0%
+            {color: $hover;}
+            
+            100%
+            {color: $amarillototal;}}}}
 
 /* FOOTER */
 
@@ -93,6 +110,12 @@ margin-top: 2rem;
         img
         {width: 25px;
         height: 25px;}}  
+
+        .logosimg
+        {&:hover
+            {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}}
 
     .derechosfooter
     {padding-top: 15px;

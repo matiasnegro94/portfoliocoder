@@ -2,13 +2,26 @@
 .card
 {background-color: $negrototal;
 font-family: $fonttext;
-font-size: 13px;}
+font-size: 13px;
 
-.card-title
-{color: $amarillototal;}
+                .card-title
+                {color: $amarillototal;
+                font-size: 2rem;}}
+
+.titulobootstrap
+{@include flex (row, center, center);
+
+        img
+        {padding: 60px 20px 0px 20px;}}
 
 .tiendamain 
         {h2
-        {font-size: 5rem;
+        {font-size: 4rem;
         font-family: $fontpixel;
-        font-weight: 900;}}
+        font-weight: 900;}
+
+        .titulotienda
+        {@include flex (row, center, center);
+        
+                img
+                {padding: 60px 20px 0px 20px;}}}

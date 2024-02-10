@@ -95,6 +95,7 @@ header .myheader {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 2;
 }
 header .myheader .logo {
   margin-bottom: 0;
@@ -111,11 +112,23 @@ header .myheader .logo h1 {
   font-family: "Myriad Pro Regular";
   padding: 0px 0px 0px 15px;
   margin: 0;
+  animation-name: animaciontitulo;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 header .myheader .logo h1:hover {
   font-weight: 700;
   color: #ff0000;
   padding: 15px 0rem 0rem 20px;
+}
+@keyframes animaciontitulo {
+  0% {
+    color: #ff0000;
+  }
+  100% {
+    color: #ffd000;
+  }
 }
 header .myheader .logo .logoimagen {
   padding: 0px 0px 10px 0px;
@@ -138,12 +151,18 @@ header nav .boton {
   border-color: rgb(47, 47, 45) rgb(47, 47, 45) black rgb(47, 47, 45);
   margin: 0 0 0 0;
   padding: 0rem 1rem 0 1rem;
+  animation-name: animacionboton;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
-header nav .boton:hover {
-  background-color: rgb(47, 47, 45);
-  border-width: 0 0 0 0;
-  font-size: 25px;
-  font-weight: 700;
+@keyframes animacionboton {
+  0% {
+    color: #ff0000;
+  }
+  100% {
+    color: #ffd000;
+  }
 }
 
 /* FOOTER */
@@ -183,6 +202,11 @@ footer .myfooter .logosfooter img {
   width: 25px;
   height: 25px;
 }
+footer .myfooter .logosimg:hover {
+  filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+  -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+  -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+}
 footer .myfooter .derechosfooter {
   padding-top: 15px;
   padding-right: 10px;
@@ -200,37 +224,32 @@ footer .myfooter .derechosfooter {
   justify-content: default;
   align-items: default;
 }
-
-.quiensoytitulo {
+.quiensoycontenido .quiensoytitulo {
   width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
-.quiensoytitulo img {
+.quiensoycontenido .quiensoytitulo img {
   width: 30px;
   height: 30px;
 }
-
-h2 {
+.quiensoycontenido .quiensoytitulo h2 {
   font-size: 2.5rem;
   font-family: "Silkscreen Regular";
   color: #ffd000;
 }
-
-.quiensoyimagen {
+.quiensoycontenido .quiensoyimagen {
   margin-top: 2rem;
   width: 50%;
 }
-
-.quiensoyimagen img {
+.quiensoycontenido .quiensoyimagen img {
   width: 375px;
   height: 600px;
+  padding: 20px 0px 0px 0px;
 }
-
-.quiensoytexto {
+.quiensoycontenido .quiensoytexto {
   margin: 2rem 0 0 0;
   width: 35%;
   display: flex;
@@ -238,15 +257,13 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-.quiensoytexto p {
+.quiensoycontenido .quiensoytexto p {
   font-size: 18px;
   font-family: "PPSupply";
   line-height: 21px;
   padding-top: 1rem;
 }
-
-.quiensoytexto span {
+.quiensoycontenido .quiensoytexto span {
   color: #faf687;
 }
 
@@ -275,6 +292,38 @@ h2 {
   justify-content: default;
   align-items: default;
 }
+.seccionesfila .secciones .threedeeart {
+  transition: all 2s;
+}
+.seccionesfila .secciones .threedeeart:hover {
+  filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
+  -webkit-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
+  -moz-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
+}
+.seccionesfila .secciones .vectorart {
+  transition: all 2s;
+}
+.seccionesfila .secciones .vectorart:hover {
+  filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
+  -webkit-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
+  -moz-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
+}
+.seccionesfila .secciones .pixelart {
+  transition: all 2s;
+}
+.seccionesfila .secciones .pixelart:hover {
+  filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+  -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+  -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+}
+.seccionesfila .secciones .dibujosamano {
+  transition: all 2s;
+}
+.seccionesfila .secciones .dibujosamano:hover {
+  filter: sepia(76%) saturate(203%);
+  -webkit-filter: sepia(76%) saturate(203%);
+  -moz-filter: sepia(76%) saturate(203%);
+}
 
 /*CONFIGURACIÓN DE BOOTSTRAP*/
 .card {
@@ -282,15 +331,34 @@ h2 {
   font-family: "PPSupply";
   font-size: 13px;
 }
-
-.card-title {
+.card .card-title {
   color: #ffd000;
+  font-size: 2rem;
+}
+
+.titulobootstrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.titulobootstrap img {
+  padding: 60px 20px 0px 20px;
 }
 
 .tiendamain h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Silkscreen Regular";
   font-weight: 900;
+}
+.tiendamain .titulotienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.tiendamain .titulotienda img {
+  padding: 60px 20px 0px 20px;
 }
 
 /*SECCIÓN BIO*/
@@ -303,8 +371,7 @@ h2 {
   margin: 0rem 1rem 0rem 1rem;
   padding: 3rem 1rem 1rem 1rem;
 }
-
-.bioimg {
+.bioimgtxt .bioimg {
   background-color: rgb(16, 16, 16);
   display: flex;
   flex-direction: row;
@@ -312,38 +379,17 @@ h2 {
   align-items: center;
   padding: 3rem 1rem 1rem 0rem;
 }
-
-.bioimg img {
-  width: 500px;
-  height: 500px;
+.bioimgtxt .bioimg img {
+  width: 625px;
+  height: 625px;
 }
-
-.biotituloytext {
+.bioimgtxt .biotituloytext {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.biotitulo {
-  width: 30%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.biotitulo h2 {
-  font-size: 4rem;
-  color: #ffd000;
-}
-
-.biotitulo img {
-  width: 40px;
-  height: 40px;
-}
-
-.biotituloytext p {
+.bioimgtxt .biotituloytext p {
   font-size: 23px;
   font-family: "PPSupply";
   line-height: 30px;
@@ -352,6 +398,22 @@ h2 {
   justify-content: default;
   align-items: default;
   padding: 4rem;
+}
+.bioimgtxt .biotituloytext .biotitulo {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0rem 0rem 0rem;
+}
+.bioimgtxt .biotituloytext .biotitulo h2 {
+  font-size: 4rem;
+  color: #ffd000;
+}
+.bioimgtxt .biotituloytext .biotitulo img {
+  width: 40px;
+  height: 40px;
 }
 
 /*CONFIGURACIÓN DE CONTACTO*/
@@ -533,21 +595,21 @@ h2 {
     flex-direction: row;
     justify-content: center;
   }
-  header .myheader .logoimagen {
-    padding: 0px 0px 23px 0px;
-    margin: 0px;
-  }
-  header .myheader .logoimagen img {
-    width: 40px;
-    height: 60px;
-    padding-top: 20px;
-  }
-  header .myheader h1 {
+  header .myheader .logo h1 {
     font-size: 3.5rem;
     padding: 0px 0px 5px 15px;
     margin: 0;
   }
-  header nav {
+  header .myheader .logo .logoimagen {
+    padding: 0px 0px 23px 0px;
+    margin: 0px;
+  }
+  header .myheader .logo .logoimagen img {
+    width: 40px;
+    height: 60px;
+    padding-top: 20px;
+  }
+  header .myheader nav {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -560,13 +622,13 @@ h2 {
     padding: 0;
     margin: 0;
   }
-  header nav ul {
+  header .myheader nav ul {
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
   }
-  header nav .boton {
+  header .myheader nav .boton {
     font-size: 1.75rem;
     padding: 0px 0px 0px 0px;
     width: 100%;
@@ -770,17 +832,17 @@ h2 {
     width: 500px;
     height: 800px;
   }
-  .quiensoytexto {
+  .quiensoycontenido .quiensoytexto {
     width: 80%;
   }
-  .quiensoytexto p {
-    font-size: 2rem;
+  .quiensoycontenido .quiensoytexto p {
+    font-size: 1.5rem;
     line-height: 2.53rem;
   }
-  .quiensoytexto h2 {
+  .quiensoycontenido .quiensoytexto h2 {
     font-size: 3rem;
   }
-  .quiensoytexto .quiensoytitulo img {
+  .quiensoycontenido .quiensoytexto .quiensoytitulo img {
     width: 40px;
     height: 40px;
   }
@@ -855,27 +917,88 @@ h2 {
 /*CONFIGURACIÓN DE BOOTSTRAP*/
 @media only screen and (max-width: 480px) {
   .card-group {
-    margin-top: 0rem;
+    margin-top: 30px;
     width: 100%;
   }
-  .card {
+  .card-group .card {
     font-size: 1.5rem;
+  }
+  .card-group .card-body .card-title {
+    font-size: 2.5rem;
+  }
+  .titulobootstrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0rem;
+  }
+  .titulobootstrap img {
+    padding: 60px 20px 0px 20px;
+  }
+  .titulobootstrap h2 {
+    font-size: 2rem;
+  }
+  .tiendamain h2 {
+    font-size: 1rem;
+  }
+  .titulotienda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0rem;
+  }
+  .titulotienda img {
+    padding: 60px 20px 0px 20px;
+  }
+  .titulotienda h2 {
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 950px) {
+  .titulobootstrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+  }
+  .titulobootstrap img {
+    padding: 40px 10px 0px 10px;
+    width: 100px;
+    height: 100px;
+  }
+  .titulobootstrap h2 {
+    font-size: 3rem;
+  }
   .card-group {
     margin-top: 0rem;
     width: 100%;
   }
-  .card {
+  .card-group .card {
     font-size: 1.5rem;
   }
-}
-@media only screen and (min-width: 481px) and (max-width: 575px) {
-  .card {
+  .card-group .card-body .card-title {
     font-size: 3rem;
   }
 }
+.tiendamain .titulotienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+}
+.tiendamain .titulotienda img {
+  padding: 60px 10px 0px 10px;
+  width: 60px;
+  height: 100px;
+}
+.tiendamain .titulotienda h2 {
+  font-size: 4rem;
+}
+
 /* --------------------------- fin media queries bootstrap --------------------------------- */
 /* ----------------------------- media queries bio ---------------------------------- */
 @media only screen and (max-width: 480px) { /*SECCIÓN BIO*/
@@ -1149,4 +1272,6 @@ h2 {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- */
+
+/*# sourceMappingURL=estilos.css.map */

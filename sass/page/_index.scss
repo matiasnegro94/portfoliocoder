@@ -1,51 +1,53 @@
 /*SECCIÓN "QUIÉN SOY" DEL INDEX*/
 .quiensoycontenido
 {width: 100%;/*Agregué el porcentaje para después dividir el div en dos*/
-@include flex (row, default, default);}
+@include flex (row, default, default);
 
-.quiensoytitulo
-{width: 70%;
-@include flex (row, space-between, center);}
+        .quiensoytitulo
+        {width: 70%;
+        @include flex (row, space-between, center);
 
-.quiensoytitulo img
-{width: 30px;
-height: 30px;}
+                img
+                {width: 30px;
+                height: 30px;}
 
-h2
-{font-size: 2.5rem;
-font-family: $fontpixel;
-color: $amarillototal;}
+                h2
+                {font-size: 2.5rem;
+                font-family: $fontpixel;
+                color: $amarillototal;}}
 
-.quiensoyimagen
-{margin-top: 2rem;
-width: 50%;}
+        .quiensoyimagen
+        {margin-top: 2rem;
+        width: 50%;
 
-.quiensoyimagen img
-{width:375px;
-height: 600px;}
+                        img
+                        {width:375px;
+                        height: 600px;
+                        padding: 20px 0px 0px 0px;}}
 
-.quiensoytexto
-{margin: 2rem 0 0 0;
-width: 35%;
-@include flex (column, center, center);}
+        .quiensoytexto
+        {margin: 2rem 0 0 0;
+        width: 35%;
+        @include flex (column, center, center);
 
-.quiensoytexto p
-{font-size: 18px;
-font-family: $fonttext;
-line-height: 21px;
-padding-top: 1rem;}
+                p
+                {font-size: 18px;
+                font-family: $fonttext;
+                line-height: 21px;
+                padding-top: 1rem;}
 
-.quiensoytexto span
-{color:$amarillofuerte;}
+                span
+                {color:$amarillofuerte;}}}
 
 
 /*PRINCIPALES SECCIONES DEL INDEX*/
 .seccionesfila
         {@include flex (row, center, default);
 
-        a {img
-        {width: 495px;
-        height: 495px;}}
+        a
+                {img
+                {width: 495px;
+                height: 495px;}}
 
         h3
         {font-size: 2rem;}
@@ -56,4 +58,38 @@ padding-top: 1rem;}
         border-style: solid;
         border-width: 1rem;
         border-color: $negroclaro;
-        @include flex (column, default, default);}}
+        @include flex (column, default, default);
+        
+                .threedeeart
+                {&:hover
+                {filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
+                -webkit-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
+                -moz-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);}
+
+                transition: all 2s;}
+        
+                .vectorart
+                {&:hover
+                {filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
+                -webkit-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
+                -moz-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);}
+        
+                transition: all 2s;}
+              
+                .pixelart
+                {&:hover
+                {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}
+        
+                transition: all 2s;}
+                
+                .dibujosamano
+                {&:hover
+                {filter: sepia(76%) saturate(203%);
+                -webkit-filter: sepia(76%) saturate(203%);
+                -moz-filter: sepia(76%) saturate(203%);}
+        
+                transition: all 2s;}                     
+                
+                }}
