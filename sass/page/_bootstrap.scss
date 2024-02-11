@@ -4,6 +4,9 @@
 font-family: $fonttext;
 font-size: 13px;
 
+                img 
+                {@include animation (animacionquiensoyimg, 1, 2s, 0);};
+
                 .card-title
                 {color: $amarillototal;
                 font-size: 2rem;}}
@@ -12,7 +15,8 @@ font-size: 13px;
 {@include flex (row, center, center);
 
         img
-        {padding: 60px 20px 0px 20px;}}
+        { @include animation (animacionquiensoyimg, 1, 2s, 0);
+        padding: 60px 20px 0px 20px;}}
 
 .tiendamain 
         {h2
@@ -24,4 +28,5 @@ font-size: 13px;
         {@include flex (row, center, center);
         
                 img
-                {padding: 60px 20px 0px 20px;}}}
+                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                padding: 60px 20px 0px 20px;}}}

@@ -31,6 +31,12 @@ flex-direction: $direction;
 justify-content: $justify;
 align-items: $align;}
 
+@mixin animation ($animationname, $iteration, $duration, $delay)
+{animation-name: $animationname;
+animation-iteration-count: $iteration;
+animation-duration: $duration;
+animation-delay: $delay;}
+
 /*ESTILOS GENERALES*/
 
 /*RESET CSS*/

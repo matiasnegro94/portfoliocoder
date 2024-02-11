@@ -10,7 +10,8 @@ flex-direction: row;
         padding: 6rem 0rem 0rem 0rem;
 
                 img
-                {width: 500px;
+                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                width: 500px;
                 height: 500px;}}
 
 
@@ -23,7 +24,8 @@ flex-direction: row;
                 .titulocontacto
                         {@include flex (row, center, center);
                                 img
-                                {padding: 0px 20px 0px 20px;}
+                                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                                padding: 0px 20px 0px 20px;}
                                 h2
                                 {font-size: 4rem;
                                 color: $amarillototal;}}

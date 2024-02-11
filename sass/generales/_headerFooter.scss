@@ -26,19 +26,15 @@ header
             font-family: $fontlogo;
             padding: 0px 0px 0px 15px;
             margin: 0;
-            animation-name: animaciontitulo;
-            animation-iteration-count: 1;
-            animation-duration: 2s;
-            animation-delay: 0;
+            @include animation (animacionheader, 1, 2s, 0);
                 &:hover
                 {font-weight: 700;
                 color: $hover;
                 padding: 15px 0rem 0rem 20px;}}
 
-            @keyframes animaciontitulo
+            @keyframes animacionheader
                 {0%
-                {color: $hover;}
-                
+                {color: $hover;}                
                 100%
                 {color: $amarillototal;}}
 
@@ -50,7 +46,8 @@ header
                         &:hover
                             {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
                             -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
-                            -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);};}}}}
+                            -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);};
+                    @include animation (animacionquiensoyimg, 1, 2s, 0);}}}}
             
     nav
     {text-decoration: none;
@@ -73,8 +70,7 @@ header
 
         @keyframes animacionboton
             {0%
-            {color: $hover;}
-            
+            {color: $hover;}            
             100%
             {color: $amarillototal;}}}}
 
@@ -100,7 +96,8 @@ margin-top: 2rem;
 
         img
         {width: 100px;
-        height: 25px;}}   
+        height: 25px;
+        @include animation (animacionquiensoyimg, 1, 2s, 0);}}   
 
     .logosfooter
     {margin-left: 9rem;
@@ -112,12 +109,21 @@ margin-top: 2rem;
         height: 25px;}}  
 
         .logosimg
-        {&:hover
+        {@include animation (animacionquiensoyimg, 1, 2s, 0);
+            &:hover
             {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
-                -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
-                -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}}
+            -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+            -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}}
 
     .derechosfooter
     {padding-top: 15px;
     padding-right: 10px;
-    @include flex (column, flex-end, center);}}}
+    @include flex (column, flex-end, center);    
+        p 
+        {@include animation (animacionderechosfooter, 1, 2s, 0);};}
+
+    @keyframes animacionderechosfooter
+    {0%
+    {color: $hover;}            
+    100%
+    {color: $amarillototal;}}}}

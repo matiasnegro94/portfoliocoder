@@ -6,7 +6,15 @@ flex: 1;
 width: 100%;
 min-width: 100%;
 max-width: 100%;
-overflow-x: hidden;}
+overflow-x: hidden;
+@include animation (animacionmain, 1, 2s, 0);}
+
+@keyframes animacionmain
+                {0%
+                {color: $hover;}
+                
+                100%
+                {color: $amarilloclaro;}}
 
 /*BODY*/
 body

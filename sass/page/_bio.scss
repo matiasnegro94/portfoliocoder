@@ -11,7 +11,8 @@ padding: 3rem 1rem 1rem 1rem;
         padding: 3rem 1rem 1rem 0rem;
 
             img
-            {width: 625px;
+            { @include animation (animacionquiensoyimg, 1, 2s, 0);
+            width: 625px;
             height: 625px;}}
 
         .biotituloytext
@@ -34,5 +35,6 @@ padding: 3rem 1rem 1rem 1rem;
                     color: $amarillototal;}
                 
                     img
-                    {width: 40px;
+                    { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                    width: 40px;
                     height: 40px;}}}}

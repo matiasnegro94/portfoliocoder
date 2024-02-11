@@ -9,12 +9,32 @@
 
                 img
                 {width: 30px;
-                height: 30px;}
+                height: 30px;
+                &:hover
+                {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}
+                @include animation (animacionquiensoyimg, 1, 2s, 0);}
+
+                @keyframes animacionquiensoyimg
+                {0%
+                {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}                
+                100%
+                {}}}
 
                 h2
                 {font-size: 2.5rem;
                 font-family: $fontpixel;
-                color: $amarillototal;}}
+                color: $amarillototal;
+                @include animation (animacionquiensoyh2, 1, 2s, 0);}
+        
+                @keyframes animacionquiensoyh2
+                {0%
+                {color: $hover;}                
+                100%
+                {color: $amarillototal;}}}
 
         .quiensoyimagen
         {margin-top: 2rem;
@@ -23,7 +43,8 @@
                         img
                         {width:375px;
                         height: 600px;
-                        padding: 20px 0px 0px 0px;}}
+                        padding: 20px 0px 0px 0px;
+                        @include animation (animacionquiensoyimg, 1, 2s, 0);}}
 
         .quiensoytexto
         {margin: 2rem 0 0 0;
@@ -34,10 +55,26 @@
                 {font-size: 18px;
                 font-family: $fonttext;
                 line-height: 21px;
-                padding-top: 1rem;}
+                padding-top: 1rem;
+                @include animation (animacionquiensoyp, 1, 2s, 0);}
+
+                @keyframes animacionquiensoyp
+                {0%
+                {color: $hover;}                
+                100%
+                {color: $amarillototal;}}
 
                 span
-                {color:$amarillofuerte;}}}
+                {color:$amarillofuerte;
+                &:hover
+                {color: $hover;}
+                 @include animation (animacionquiensoyspan, 1, 2s, 0);}
+        
+                @keyframes animacionquiensoyspan
+                {0%
+                {color: $hover;}                
+                100%
+                {color: $amarillototal;}}}
 
 
 /*PRINCIPALES SECCIONES DEL INDEX*/
@@ -61,7 +98,8 @@
         @include flex (column, default, default);
         
                 .threedeeart
-                {&:hover
+                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                &:hover
                 {filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
                 -webkit-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
                 -moz-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);}
@@ -69,7 +107,8 @@
                 transition: all 2s;}
         
                 .vectorart
-                {&:hover
+                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                &:hover
                 {filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
                 -webkit-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
                 -moz-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);}
@@ -77,7 +116,8 @@
                 transition: all 2s;}
               
                 .pixelart
-                {&:hover
+                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                &:hover
                 {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
                 -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
                 -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);}
@@ -85,11 +125,10 @@
                 transition: all 2s;}
                 
                 .dibujosamano
-                {&:hover
+                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                &:hover
                 {filter: sepia(76%) saturate(203%);
                 -webkit-filter: sepia(76%) saturate(203%);
                 -moz-filter: sepia(76%) saturate(203%);}
         
-                transition: all 2s;}                     
-                
-                }}
+                transition: all 2s;}}}
