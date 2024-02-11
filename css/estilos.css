@@ -88,7 +88,7 @@ header .myheader {
   overflow-x: hidden;
   height: 50px;
   padding: 0px 0px 0px 0px;
-  margin: 0 0 0 0; /*Forma abreviada*/
+  margin: 0 0 0 0;
   position: fixed;
   top: 0;
   display: flex;
@@ -133,9 +133,14 @@ header .myheader .logo h1:hover {
 header .myheader .logo .logoimagen {
   padding: 0px 0px 10px 0px;
 }
-header .myheader .logo img {
+header .myheader .logo .logoimagen img {
   width: 25px;
   height: 25px;
+}
+header .myheader .logo .logoimagen img:hover {
+  filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+  -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+  -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
 }
 header nav {
   text-decoration: none;
@@ -544,7 +549,7 @@ footer .myfooter .derechosfooter {
     justify-content: center;
     align-self: center;
   }
-  header .myheader .logo {
+  header .myheader a .logo {
     margin: 0px;
     padding: 0px 70px 0px 0px;
     grid-column-start: 1;
@@ -555,18 +560,18 @@ footer .myfooter .derechosfooter {
     justify-content: center;
     align-items: center;
   }
-  header .myheader .logo .logoimagen {
+  header .myheader a .logo .logoimagen {
     padding: 0px 0px 12px 0px;
     margin: 0px;
   }
-  header .myheader .logo .logoimagen img {
+  header .myheader a .logo .logoimagen h1 {
+    font-size: 40px;
+  }
+  header .myheader a .logo .logoimagen img {
     width: 40px;
     height: 40px;
   }
-  header .myheader .logo .logoimagen h1 {
-    font-size: 2rem;
-  }
-  header .myheader nav {
+  header .myheader a nav {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 2;
@@ -579,13 +584,13 @@ footer .myfooter .derechosfooter {
     padding: 0;
     margin: 0;
   }
-  header .myheader nav ul {
+  header .myheader a nav ul {
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-direction: column;
   }
-  header .myheader nav .boton {
+  header .myheader a nav .boton {
     font-size: 1.5rem;
     padding: 0px 0px 0px 0px;
     font-size: 2rem;
@@ -610,6 +615,7 @@ footer .myfooter .derechosfooter {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: default;
   }
   header .myheader .logo h1 {
     font-size: 3.5rem;
@@ -635,6 +641,7 @@ footer .myfooter .derechosfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: default;
     padding: 0;
     margin: 0;
   }
@@ -643,6 +650,8 @@ footer .myfooter .derechosfooter {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: default;
+    align-items: default;
   }
   header .myheader nav .boton {
     font-size: 1.75rem;
@@ -868,7 +877,7 @@ footer .myfooter .derechosfooter {
 /* --------------------------------------- fin media queries quiensoy ---------------------------------*/
 /* --------------------------------- media queries secciones del index -------------------------------*/
 @media only screen and (max-width: 480px) { /*PRINCIPALES SECCIONES DEL INDEX*/
-  .seccionesfila { /*Propiedades de Flexbox*/
+  .seccionesfila {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -942,7 +951,7 @@ footer .myfooter .derechosfooter {
     font-size: 1.5rem;
   }
   .card-group .card-body .card-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .titulobootstrap {
     display: flex;
@@ -1302,4 +1311,6 @@ footer .myfooter .derechosfooter {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- */
+
+/*# sourceMappingURL=estilos.css.map */

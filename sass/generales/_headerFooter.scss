@@ -8,7 +8,7 @@ header
     overflow-x: hidden;
     height: 50px;
     padding: 0px 0px 0px 0px;
-    margin: 0 0 0 0; /*Forma abreviada*/
+    margin: 0 0 0 0;
     position: fixed;
     top: 0;
     display: flex;
@@ -33,10 +33,10 @@ header
             animation-iteration-count: 1;
             animation-duration: 2s;
             animation-delay: 0;
-            &:hover
-            {font-weight: 700;
-            color: $hover;
-            padding: 15px 0rem 0rem 20px;}}
+                &:hover
+                {font-weight: 700;
+                color: $hover;
+                padding: 15px 0rem 0rem 20px;}}
 
             @keyframes animaciontitulo
                 {0%
@@ -46,11 +46,14 @@ header
                 {color: $amarillototal;}}
 
             .logoimagen
-                {padding: 0px 0px 10px 0px;}
-
-                img
-                {width: 25px;
-                height: 25px;}}}
+                {padding: 0px 0px 10px 0px;
+                    img
+                    {width: 25px;
+                    height: 25px;
+                        &:hover
+                            {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                            -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
+                            -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);};}}}}
             
     nav
     {text-decoration: none;

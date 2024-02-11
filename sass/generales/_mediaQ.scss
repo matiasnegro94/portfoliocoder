@@ -80,7 +80,7 @@ padding: 0;}}
 
                     img
                     {width: 40px;
-                    height: 40px;}}}
+                    height: 40px;}}};
                        
         nav
         {grid-column-start: 1;
@@ -123,9 +123,7 @@ padding: 0;}}
             grid-column-end: 1;
             grid-row-start: 1;
             grid-row-end: 1;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex (row, center, default);
 
                     h1
                     {font-size: 3.5rem;
@@ -148,17 +146,14 @@ padding: 0;}}
             grid-row-end: 2;
             font-size: 4rem;
             width: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex (column, center, default);
             padding: 0;
             margin: 0;
         
             ul
             {padding: 0px;
             margin: 0px;
-            display: flex;
-            flex-direction: column;}
+            @include flex (column, default, default);}
                 
             .boton
             {font-size: 1.75rem;
@@ -426,7 +421,7 @@ width: 100%;
         {font-size: 1.5rem;}
                 .card-body
                     {.card-title
-                            {font-size: 2.5rem;}}}
+                            {font-size: 2rem;}}}
 
 .titulobootstrap
 {@include flex (row, center, center);
