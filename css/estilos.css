@@ -1000,7 +1000,7 @@ footer .myfooter .derechosfooter {
     font-size: 1.5rem;
   }
   .card-group .card-body .card-title {
-    font-size: 2rem;
+    font-size: 35px;
   }
 }
 .tiendamain .titulotienda {
@@ -1301,4 +1301,6 @@ footer .myfooter .derechosfooter {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- */
+
+/*# sourceMappingURL=estilos.css.map */
