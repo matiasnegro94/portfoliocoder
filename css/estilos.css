@@ -688,12 +688,13 @@ footer .myfooter .derechosfooter {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   footer .myfooter .logofooter {
     padding-left: 0px;
     padding-top: 0px;
+    margin: 0;
   }
   footer .myfooter .logofooter img {
     width: 15rem;
@@ -1301,6 +1302,4 @@ footer .myfooter .derechosfooter {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- */
-
-/*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */
