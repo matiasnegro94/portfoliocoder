@@ -668,15 +668,16 @@ footer .myfooter .derechosfooter {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   header .myheader {
-    padding: 100px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     position: relative;
   }
   header .myheader .logoimagen {
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 50px 0px;
   }
   header .myheader .logoimagen img {
     width: 50px;
     height: 50px;
+    padding: 0px 0px 50px 0px;
   }
 }
 /* -----------------------------------  inicio media queries footer ---------------------------------- */
@@ -1300,6 +1301,4 @@ footer .myfooter .derechosfooter {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- */
-
-/*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */
