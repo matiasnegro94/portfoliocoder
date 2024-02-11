@@ -1,6 +1,6 @@
 /*CONFIGURACIÓN DE CONTACTO*/
 .contactomaincontenedor
-{padding-top: 2rem;
+{padding: 2rem 0rem 2rem 0rem;
 width: 100%;
 display: flex;
 flex-direction: row;
@@ -39,7 +39,11 @@ flex-direction: row;
                 font-size: 15px;
                 line-height: 25px;
                 line-height: 18px;
-                padding: 0px, 0px, 100px, 0px;                 
+                padding: 0px, 0px, 100px, 0px;     
+                
+                        .inputnombre, .inputapellido, .email, .inputtelefono, .textarea, select, input, .checkbox
+                        {background-color: $negroclaro;
+                        color: $amarillototal;}
 
                         .dondevivis
                         {line-height: 2px;
@@ -47,4 +51,7 @@ flex-direction: row;
 
                         .enquepuedoayudarte
                         {padding: 20px 0px 10px 0px;
-                        @include flex (row, center, default);}}} 
+                        @include flex (row, center, default);}
+                        
+                        
+                }} 
