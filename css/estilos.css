@@ -661,23 +661,23 @@ footer .myfooter .derechosfooter {
   header .myheader .logo .logoimagen {
     padding: 0px 0px 20px 0px;
   }
-  header .myheader .logo .logoimagen .logoimagen img {
+  header .myheader .logo .logoimagen img {
     width: 50px;
     height: 50px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   header .myheader {
-    padding: 0px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
     position: relative;
   }
   header .myheader .logoimagen {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
   }
   header .myheader .logoimagen img {
-    width: 50px;
+    width: 60px;
     height: 50px;
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 10px 10px;
   }
 }
 /* -----------------------------------  inicio media queries footer ---------------------------------- */
