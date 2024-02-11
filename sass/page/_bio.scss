@@ -11,7 +11,7 @@ padding: 3rem 1rem 1rem 1rem;
         padding: 3rem 1rem 1rem 0rem;
 
             img
-            { @include animation (animacionquiensoyimg, 1, 2s, 0);
+            { @include animation (animacionparaimagenes, 1, 2s, 0);
             width: 625px;
             height: 625px;}}
 
@@ -23,6 +23,7 @@ padding: 3rem 1rem 1rem 1rem;
             font-family: $fonttext;
             line-height: 30px;
             @include flex (row, default, default);
+            @include animation (animacionparatexto, 1, 2s, 0);
             padding: 4rem;}
 
             .biotitulo
@@ -32,9 +33,10 @@ padding: 3rem 1rem 1rem 1rem;
             
                     h2
                     {font-size: 4rem;
-                    color: $amarillototal;}
+                    color: $amarillototal;
+                    @include animation (animacionparatexto, 1, 2s, 0);}
                 
                     img
-                    { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                    { @include animation (animacionparaimagenes, 1, 2s, 0);
                     width: 40px;
                     height: 40px;}}}}

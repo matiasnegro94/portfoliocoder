@@ -61,20 +61,12 @@ main {
   min-width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  animation-name: animacionmain;
+  animation-name: animacionparatexto;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
 }
 
-@keyframes animacionmain {
-  0% {
-    color: #ff0000;
-  }
-  100% {
-    color: #d8d697;
-  }
-}
 /*BODY*/
 body {
   background-color: rgb(16, 16, 16);
@@ -148,7 +140,7 @@ header .myheader .logo .logoimagen {
 header .myheader .logo .logoimagen img {
   width: 25px;
   height: 25px;
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -210,7 +202,7 @@ footer .myfooter .logofooter {
 footer .myfooter .logofooter img {
   width: 100px;
   height: 25px;
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -228,7 +220,7 @@ footer .myfooter .logosfooter img {
   height: 25px;
 }
 footer .myfooter .logosimg {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -279,7 +271,7 @@ footer .myfooter .derechosfooter p {
 .quiensoycontenido .quiensoytitulo img {
   width: 30px;
   height: 30px;
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -289,7 +281,7 @@ footer .myfooter .derechosfooter p {
   -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
   -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
 }
-@keyframes animacionquiensoyimg {
+@keyframes animacionparaimagenes {
   0% {
     filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
     -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
@@ -300,12 +292,12 @@ footer .myfooter .derechosfooter p {
   font-size: 2.5rem;
   font-family: "Silkscreen Regular";
   color: #ffd000;
-  animation-name: animacionquiensoyh2;
+  animation-name: animacionparatexto;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
 }
-@keyframes animacionquiensoyh2 {
+@keyframes animacionparatexto {
   0% {
     color: #ff0000;
   }
@@ -322,7 +314,7 @@ footer .myfooter .derechosfooter p {
   width: 375px;
   height: 600px;
   padding: 20px 0px 0px 0px;
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -341,36 +333,20 @@ footer .myfooter .derechosfooter p {
   font-family: "PPSupply";
   line-height: 21px;
   padding-top: 1rem;
-  animation-name: animacionquiensoyp;
+  animation-name: animacionparatexto;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
 }
-@keyframes animacionquiensoyp {
-  0% {
-    color: #ff0000;
-  }
-  100% {
-    color: #ffd000;
-  }
-}
 .quiensoytexto span {
   color: #faf687;
-  animation-name: animacionquiensoyspan;
+  animation-name: animacionparatexto;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
 }
 .quiensoytexto span:hover {
   color: #ff0000;
-}
-@keyframes animacionquiensoyspan {
-  0% {
-    color: #ff0000;
-  }
-  100% {
-    color: #ffd000;
-  }
 }
 
 /*PRINCIPALES SECCIONES DEL INDEX*/
@@ -386,6 +362,10 @@ footer .myfooter .derechosfooter p {
 }
 .seccionesfila h3 {
   font-size: 2rem;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 .seccionesfila .secciones {
   font-family: "Silkscreen Regular";
@@ -399,7 +379,7 @@ footer .myfooter .derechosfooter p {
   align-items: default;
 }
 .seccionesfila .secciones .threedeeart {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -411,7 +391,7 @@ footer .myfooter .derechosfooter p {
   -moz-filter: sepia(27%) hue-rotate(216deg) saturate(458%) opacity(67%) contrast(320%) invert(97%);
 }
 .seccionesfila .secciones .vectorart {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -423,7 +403,7 @@ footer .myfooter .derechosfooter p {
   -moz-filter: sepia(45%) brightness(80%) hue-rotate(73deg) saturate(398%) contrast(123%);
 }
 .seccionesfila .secciones .pixelart {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -435,7 +415,7 @@ footer .myfooter .derechosfooter p {
   -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
 }
 .seccionesfila .secciones .dibujosamano {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -448,49 +428,67 @@ footer .myfooter .derechosfooter p {
 }
 
 /*CONFIGURACIÓN DE BOOTSTRAP*/
-.card {
-  background-color: black;
-  font-family: "PPSupply";
-  font-size: 13px;
-}
-.card img {
-  animation-name: animacionquiensoyimg;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-  animation-delay: 0;
-}
-.card .card-title {
-  color: #ffd000;
-  font-size: 2rem;
-}
-
-.titulobootstrap {
+main .titulobootstrap {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.titulobootstrap img {
-  animation-name: animacionquiensoyimg;
+main .titulobootstrap h2 {
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
+}
+main .titulobootstrap img {
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
   padding: 60px 20px 0px 20px;
 }
-
-.tiendamain h2 {
+main .card {
+  background-color: black;
+  font-family: "PPSupply";
+  font-size: 13px;
+}
+main .card p {
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
+}
+main .card img {
+  animation-name: animacionparaimagenes;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
+}
+main .card .card-title {
+  color: #ffd000;
+  font-size: 2rem;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
+}
+main .tiendamain h2 {
   font-size: 4rem;
   font-family: "Silkscreen Regular";
   font-weight: 900;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
-.tiendamain .titulotienda {
+main .tiendamain .titulotienda {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.tiendamain .titulotienda img {
-  animation-name: animacionquiensoyimg;
+main .tiendamain .titulotienda img {
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -516,7 +514,7 @@ footer .myfooter .derechosfooter p {
   padding: 3rem 1rem 1rem 0rem;
 }
 .bioimgtxt .bioimg img {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -537,6 +535,10 @@ footer .myfooter .derechosfooter p {
   flex-direction: row;
   justify-content: default;
   align-items: default;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
   padding: 4rem;
 }
 .bioimgtxt .biotituloytext .biotitulo {
@@ -550,9 +552,13 @@ footer .myfooter .derechosfooter p {
 .bioimgtxt .biotituloytext .biotitulo h2 {
   font-size: 4rem;
   color: #ffd000;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 .bioimgtxt .biotituloytext .biotitulo img {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -572,7 +578,7 @@ footer .myfooter .derechosfooter p {
   padding: 6rem 0rem 0rem 0rem;
 }
 .contactomaincontenedor .contactoimg img {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -592,7 +598,7 @@ footer .myfooter .derechosfooter p {
   align-items: center;
 }
 .contactomaincontenedor .tituloyform .titulocontacto img {
-  animation-name: animacionquiensoyimg;
+  animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-delay: 0;
@@ -601,12 +607,20 @@ footer .myfooter .derechosfooter p {
 .contactomaincontenedor .tituloyform .titulocontacto h2 {
   font-size: 4rem;
   color: #ffd000;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 .contactomaincontenedor .tituloyform textarea {
   width: 70%;
 }
 .contactomaincontenedor .tituloyform p {
   padding-top: 1rem;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 .contactomaincontenedor form {
   font-family: "PPSupply";
@@ -614,6 +628,10 @@ footer .myfooter .derechosfooter p {
   line-height: 25px;
   line-height: 18px;
   padding: 0px, 0px, 100px, 0px;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 .contactomaincontenedor form .inputnombre, .contactomaincontenedor form .inputapellido, .contactomaincontenedor form .email, .contactomaincontenedor form .inputtelefono, .contactomaincontenedor form .textarea, .contactomaincontenedor form select, .contactomaincontenedor form input, .contactomaincontenedor form .checkbox {
   background-color: rgb(16, 16, 16);

@@ -47,7 +47,7 @@ header
                             {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
                             -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
                             -moz-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);};
-                    @include animation (animacionquiensoyimg, 1, 2s, 0);}}}}
+                    @include animation (animacionparaimagenes, 1, 2s, 0);}}}}
             
     nav
     {text-decoration: none;
@@ -97,7 +97,7 @@ margin-top: 2rem;
         img
         {width: 100px;
         height: 25px;
-        @include animation (animacionquiensoyimg, 1, 2s, 0);}}   
+        @include animation (animacionparaimagenes, 1, 2s, 0);}}   
 
     .logosfooter
     {margin-left: 9rem;
@@ -109,7 +109,7 @@ margin-top: 2rem;
         height: 25px;}}  
 
         .logosimg
-        {@include animation (animacionquiensoyimg, 1, 2s, 0);
+        {@include animation (animacionparaimagenes, 1, 2s, 0);
             &:hover
             {filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);
             -webkit-filter: sepia(45%) brightness(56%) hue-rotate(318deg) saturate(751%) contrast(705%);

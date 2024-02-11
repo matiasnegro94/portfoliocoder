@@ -1,32 +1,40 @@
 /*CONFIGURACIÓN DE BOOTSTRAP*/
-.card
-{background-color: $negrototal;
-font-family: $fonttext;
-font-size: 13px;
-
-                img 
-                {@include animation (animacionquiensoyimg, 1, 2s, 0);};
-
-                .card-title
-                {color: $amarillototal;
-                font-size: 2rem;}}
-
-.titulobootstrap
-{@include flex (row, center, center);
-
-        img
-        { @include animation (animacionquiensoyimg, 1, 2s, 0);
-        padding: 60px 20px 0px 20px;}}
-
-.tiendamain 
-        {h2
-        {font-size: 4rem;
-        font-family: $fontpixel;
-        font-weight: 900;}
-
-        .titulotienda
+main
+        {.titulobootstrap
         {@include flex (row, center, center);
-        
+                h2
+                {@include animation (animacionparatexto, 1, 2s, 0);};
+
                 img
-                { @include animation (animacionquiensoyimg, 1, 2s, 0);
-                padding: 60px 20px 0px 20px;}}}
+                { @include animation (animacionparaimagenes, 1, 2s, 0);
+                padding: 60px 20px 0px 20px;}}
+
+        .card
+        {background-color: $negrototal;
+        font-family: $fonttext;
+        font-size: 13px;
+
+                        p 
+                        {@include animation (animacionparatexto, 1, 2s, 0);};
+
+                        img 
+                        {@include animation (animacionparaimagenes, 1, 2s, 0);};
+
+                        .card-title
+                        {color: $amarillototal;
+                        font-size: 2rem;
+                        @include animation (animacionparatexto, 1, 2s, 0);}}
+
+        .tiendamain 
+                {h2
+                {font-size: 4rem;
+                font-family: $fontpixel;
+                font-weight: 900;
+                @include animation (animacionparatexto, 1, 2s, 0);}
+
+                .titulotienda
+                {@include flex (row, center, center);
+                
+                        img
+                        { @include animation (animacionparaimagenes, 1, 2s, 0);
+                        padding: 60px 20px 0px 20px;}}}}

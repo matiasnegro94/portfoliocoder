@@ -10,7 +10,7 @@ flex-direction: row;
         padding: 6rem 0rem 0rem 0rem;
 
                 img
-                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                { @include animation (animacionparaimagenes, 1, 2s, 0);
                 width: 500px;
                 height: 500px;}}
 
@@ -24,17 +24,19 @@ flex-direction: row;
                 .titulocontacto
                         {@include flex (row, center, center);
                                 img
-                                { @include animation (animacionquiensoyimg, 1, 2s, 0);
+                                { @include animation (animacionparaimagenes, 1, 2s, 0);
                                 padding: 0px 20px 0px 20px;}
                                 h2
                                 {font-size: 4rem;
-                                color: $amarillototal;}}
+                                color: $amarillototal;
+                                @include animation (animacionparatexto, 1, 2s, 0);}}
                                   
                 textarea
                 {width: 70%;}
                 
                 p
-                {padding-top: 1rem;}}
+                {padding-top: 1rem;
+                @include animation (animacionparatexto, 1, 2s, 0);}}
 
                 form
                 {font-family: $fonttext;
@@ -42,6 +44,7 @@ flex-direction: row;
                 line-height: 25px;
                 line-height: 18px;
                 padding: 0px, 0px, 100px, 0px;     
+                @include animation (animacionparatexto, 1, 2s, 0);
                 
                         .inputnombre, .inputapellido, .email, .inputtelefono, .textarea, select, input, .checkbox
                         {background-color: $negroclaro;
@@ -53,7 +56,4 @@ flex-direction: row;
 
                         .enquepuedoayudarte
                         {padding: 20px 0px 10px 0px;
-                        @include flex (row, center, default);}
-                        
-                        
-                }} 
+                        @include flex (row, center, default);}}} 

@@ -7,14 +7,7 @@ width: 100%;
 min-width: 100%;
 max-width: 100%;
 overflow-x: hidden;
-@include animation (animacionmain, 1, 2s, 0);}
-
-@keyframes animacionmain
-                {0%
-                {color: $hover;}
-                
-                100%
-                {color: $amarilloclaro;}}
+@include animation (animacionparatexto, 1, 2s, 0);}
 
 /*BODY*/
 body
