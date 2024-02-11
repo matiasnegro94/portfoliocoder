@@ -100,12 +100,11 @@ padding: 0;}}
 @media only screen and (min-width: 481px) and (max-width: 950px)
 {header 
     {.myheader
-    {display: grid;
-    width: 100%;
-    max-width: 100%;
+    {width: 100%;
+    min-width: 100%;
     height: auto;
     position:relative;
-    justify-content: center;
+    @include flex (column, center, center);
 
             .logo
             {margin: 0px;
@@ -114,21 +113,21 @@ padding: 0;}}
             grid-column-end: 1;
             grid-row-start: 1;
             grid-row-end: 1;
-            @include flex (row, center, default);
+            @include flex (row, center, center);
 
                     h1
-                    {font-size: 3.5rem;
+                    {font-size: 6rem;
                     padding: 0px 0px 5px 15px;
                     margin: 0;}  
         
                     .logoimagen
-                    {padding: 0px 0px 23px 0px;
+                    {padding: 0px 0px 30px 0px;
                     margin: 0px;
 
                         img
-                        {width: 40px;
-                        height: 60px;
-                        padding-top: 20px;}}}           
+                        {width: 60px;
+                        height: 70px;
+                        padding-top: 10px;}}}           
             
             nav
             {grid-column-start: 1;
@@ -136,26 +135,29 @@ padding: 0;}}
             grid-row-start: 2;
             grid-row-end: 2;
             font-size: 4rem;
-            width: 100vh;
+            width: 100%;
             @include flex (column, center, default);
             padding: 0;
             margin: 0;
         
-            ul
-            {padding: 0px;
-            margin: 0px;
-            @include flex (column, default, default);}
-                
-            .boton
-            {font-size: 1.75rem;
-            padding: 0px 0px 0px 0px;
-            width: 100%;}}}}}
+                ul
+                {padding: 0px;
+                margin: 0px;
+                @include flex (column, default, default);
+                width: 100%;
+                    li
+                        {.boton
+                        {font-size: 3rem;
+                        padding: 0px 0px 0px 0px;
+                        width: 100%;}}}}}}}
 
 @media only screen and (min-width: 951px) and (max-width: 1200px) /*media queries header 1200*/
 {header 
     {.myheader
     {height: 6rem;
     position: relative;
+    width: 100%;
+    max-width: 100%;
 
         .logo
         {padding-left: 3rem;
@@ -165,7 +167,13 @@ padding: 0;}}
             
                 img
                 {width: 50px;
-                height: 50px;}}}}}}
+                height: 50px;}}}}
+        nav
+            {width: 100%;
+                ul
+                {width: 100%;
+                    .boton
+                    {width: 100%;}}};}}
       
  @media only screen and (min-width: 1200px) and (max-width: 1500px) /*media queries header 1500*/
  {header
@@ -174,16 +182,27 @@ padding: 0;}}
     position: relative;
 
         .logo
-            {h1 
-            {font-size: 2.5rem;};
+            {width: 200%;
+            padding: 0px 0px 15px 15px;
+            @include flex (row, center, center);
+                h1 
+                {width: 200%;
+                font-size: 3rem;
+                display: flex;};
 
-            .logoimagen
-            {padding: 0px 0px 0px 0px;
-            
-                img
-                {width: 55px;
-                height: 70px;
-                padding: 0px 0px 30px 10px;}}}}}}
+                .logoimagen
+                {padding: 0px 0px 10px 0px;
+                
+                    img
+                    {width: 50px;
+                    height: 40px;}}}
+                
+        nav 
+        {width: 78%;
+            ul
+            {width: 100%;
+                .boton
+                {width: 100%;}}};}}}
      
 //-------------------------- fin media queries header -------------------------
 /* -----------------------------------  inicio media queries footer ---------------------------------- */

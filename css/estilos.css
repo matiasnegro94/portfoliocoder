@@ -601,12 +601,14 @@ footer .myfooter .derechosfooter {
 }
 @media only screen and (min-width: 481px) and (max-width: 950px) {
   header .myheader {
-    display: grid;
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
     height: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   header .myheader .logo {
     margin: 0px;
@@ -618,21 +620,21 @@ footer .myfooter .derechosfooter {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: default;
+    align-items: center;
   }
   header .myheader .logo h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
     padding: 0px 0px 5px 15px;
     margin: 0;
   }
   header .myheader .logo .logoimagen {
-    padding: 0px 0px 23px 0px;
+    padding: 0px 0px 30px 0px;
     margin: 0px;
   }
   header .myheader .logo .logoimagen img {
-    width: 40px;
-    height: 60px;
-    padding-top: 20px;
+    width: 60px;
+    height: 70px;
+    padding-top: 10px;
   }
   header .myheader nav {
     grid-column-start: 1;
@@ -640,7 +642,7 @@ footer .myfooter .derechosfooter {
     grid-row-start: 2;
     grid-row-end: 2;
     font-size: 4rem;
-    width: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -655,9 +657,10 @@ footer .myfooter .derechosfooter {
     flex-direction: column;
     justify-content: default;
     align-items: default;
+    width: 100%;
   }
-  header .myheader nav .boton {
-    font-size: 1.75rem;
+  header .myheader nav ul li .boton {
+    font-size: 3rem;
     padding: 0px 0px 0px 0px;
     width: 100%;
   }
@@ -666,6 +669,8 @@ footer .myfooter .derechosfooter {
   header .myheader {
     height: 6rem;
     position: relative;
+    width: 100%;
+    max-width: 100%;
   }
   header .myheader .logo {
     padding-left: 3rem;
@@ -677,22 +682,49 @@ footer .myfooter .derechosfooter {
     width: 50px;
     height: 50px;
   }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    width: 100%;
+  }
+  header nav ul .boton {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   header .myheader {
     padding: 100px 0px 0px 0px;
     position: relative;
   }
+  header .myheader .logo {
+    width: 200%;
+    padding: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   header .myheader .logo h1 {
-    font-size: 2.5rem;
+    width: 200%;
+    font-size: 3rem;
+    display: flex;
   }
   header .myheader .logo .logoimagen {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
   }
   header .myheader .logo .logoimagen img {
-    width: 55px;
-    height: 70px;
-    padding: 0px 0px 30px 10px;
+    width: 50px;
+    height: 40px;
+  }
+  header .myheader nav {
+    width: 78%;
+  }
+  header .myheader nav ul {
+    width: 100%;
+  }
+  header .myheader nav ul .boton {
+    width: 100%;
   }
 }
 /* -----------------------------------  inicio media queries footer ---------------------------------- */
