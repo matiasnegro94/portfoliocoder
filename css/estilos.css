@@ -405,7 +405,7 @@ footer .myfooter .derechosfooter {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 .bioimgtxt .biotituloytext .biotitulo h2 {
   font-size: 4rem;
@@ -1031,25 +1031,31 @@ footer .myfooter .derechosfooter {
     padding: 0rem 0rem 0rem 0rem;
     width: 100%;
   }
-  .bioimg {
+  .bioimgtxt .bioimg {
     display: flex;
     flex-direction: row;
     justify-content: default;
     align-items: default;
     padding: 3rem 0rem 0rem 0rem;
   }
-  .bioimg img {
+  .bioimgtxt .bioimg img {
     width: 480px;
     height: 480px;
   }
-  .biotituloytext {
-    padding: 20px;
+  .bioimgtxt .biotituloytext {
+    padding: 10px;
+    margin: 0;
   }
-  .biotitulo {
-    width: auto;
-  }
-  .biotituloytext p {
+  .bioimgtxt .biotituloytext p {
     font-size: 20px;
+    padding: 0;
+  }
+  .bioimgtxt .biotituloytext .biotitulo {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  .bioimgtxt .biotituloytext h2 {
     padding: 0;
   }
 }
@@ -1078,21 +1084,21 @@ footer .myfooter .derechosfooter {
   .biotituloytext {
     padding: 20px;
   }
-  .biotitulo {
-    width: auto;
-    width: 50%;
-  }
-  .biotitulo h2 {
-    font-size: 6rem;
-  }
-  .biotitulo img {
-    width: 80px;
-    height: 80px;
-  }
   .biotituloytext p {
     font-size: 2rem;
     line-height: 3rem;
     padding: 0;
+  }
+  .biotituloytext .biotitulo {
+    width: auto;
+    width: 50%;
+  }
+  .biotituloytext h2 {
+    font-size: 6rem;
+  }
+  .biotituloytext img {
+    width: 80px;
+    height: 80px;
   }
 }
 @media only screen and (min-width: 951px) and (max-width: 1200px) { /*SECCIÓN BIO*/
@@ -1150,6 +1156,8 @@ footer .myfooter .derechosfooter {
   .contactomaincontenedor {
     display: grid;
     width: 100%;
+    justify-content: center;
+    align-content: center;
   }
   .contactomaincontenedor .contactoimg {
     grid-row-start: 1;
@@ -1164,8 +1172,8 @@ footer .myfooter .derechosfooter {
     margin: auto; /*IMPORTANTÍSIMO PARA QUE EL CONTENIDO DE UN GRID SE CENTRE*/
   }
   .contactomaincontenedor .contactoimg img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
   .contactomaincontenedor .tituloyform {
     padding: 0px 0px 0px 0px;
@@ -1292,4 +1300,6 @@ footer .myfooter .derechosfooter {
     padding-top: 10px;
   }
 }
-/* ------------------------------- fin de media queries de contacto ------------------------------------- *//*# sourceMappingURL=estilos.css.map */
+/* ------------------------------- fin de media queries de contacto ------------------------------------- */
+
+/*# sourceMappingURL=estilos.css.map */
