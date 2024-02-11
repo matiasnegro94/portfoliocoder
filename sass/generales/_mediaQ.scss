@@ -7,7 +7,6 @@ justify-content: center;
 align-items: center;}}
 
 @media only screen and (min-width: 480px) and (max-width: 950px)
-
 {main
 {margin: auto;
 padding: 0;
@@ -18,7 +17,6 @@ align-items: center;
 width: 100%;}}
 
 @media only screen and (min-width: 951px) and (max-width: 1200px)
-
 {main
 {margin: auto;
 padding: 0;
@@ -42,7 +40,6 @@ justify-content: center;
 align-items: center;}}
 
 @media only screen and (min-width: 951px) and (max-width: 1200px)
-
 {body
 {min-height: auto;
 margin: 0;
@@ -62,7 +59,8 @@ padding: 0;}}
         justify-content: center;
         align-self: center;
 
-            .logo
+        a
+            {.logo
             {margin: 0px;
             padding: 0px 70px 0px 0px;
             grid-column-start: 1;
@@ -72,16 +70,17 @@ padding: 0;}}
             display: flex;
             justify-content: center;
             align-items: center;
-        
-            .logoimagen
-            {padding: 0px 0px 12px 0px;
-            margin: 0px;
-                img
-                {width: 40px;
-                height: 40px;}      
-            
-            h1
-            {font-size: 2rem;}}}
+               
+                .logoimagen
+                {padding: 0px 0px 12px 0px;
+                margin: 0px;
+
+                    h1
+                    {font-size: 40px;}
+
+                    img
+                    {width: 40px;
+                    height: 40px;}}}
                        
         nav
         {grid-column-start: 1;
@@ -105,7 +104,7 @@ padding: 0;}}
             .boton
             {font-size: 1.5rem;
             padding: 0px 0px 0px 0px;
-            font-size: 2rem;}}}}}
+            font-size: 2rem;}}}}}}
 
 @media only screen and (min-width: 481px) and (max-width: 950px)
 {header 
@@ -366,8 +365,7 @@ padding-left: 3rem;
 @media only screen and (max-width: 480px)
 {/*PRINCIPALES SECCIONES DEL INDEX*/
 .seccionesfila
-{/*Propiedades de Flexbox*/
-@include flex (column, center, center);
+{@include flex (column, center, center);
 margin: auto;
 width: 100%;
 
@@ -596,7 +594,6 @@ font-family: $fonttext;
 line-height: 3rem;
 @include flex (row, default, default);
 padding: 0;}}
-
 
 /* -------------------------------- fin media queries bio ------------------------------------- */
 
