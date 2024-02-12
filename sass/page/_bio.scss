@@ -22,7 +22,6 @@ padding: 3rem 1rem 1rem 1rem;
             {font-size: 23px;
             font-family: $fonttext;
             line-height: 30px;
-            @include flex (row, default, default);
             @include animation (animacionparatexto, 1, 2s, 0);
             padding: 4rem;}
 

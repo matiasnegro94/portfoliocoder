@@ -13,7 +13,7 @@
   src: url("../media/fonts/PPSupplyMono-Regular.otf");
 }
 /*ESTILOS GENERALES*/
-/*RESET CSS*/
+/*reset css*/
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +27,14 @@
 }
 * p {
   color: #d8d697;
+}
+* span {
+  color: #faf687;
+  font-weight: 700;
+  animation-name: animacionparatexto;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0;
 }
 * a {
   text-decoration: none;
@@ -338,16 +346,6 @@ footer .myfooter .derechosfooter p {
   animation-duration: 2s;
   animation-delay: 0;
 }
-.quiensoytexto span {
-  color: #faf687;
-  animation-name: animacionparatexto;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-  animation-delay: 0;
-}
-.quiensoytexto span:hover {
-  color: #ff0000;
-}
 
 /*PRINCIPALES SECCIONES DEL INDEX*/
 .seccionesfila {
@@ -472,7 +470,13 @@ main .card .card-title {
   animation-duration: 2s;
   animation-delay: 0;
 }
-main .tiendamain h2 {
+main .titulotienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .titulotienda h2 {
   font-size: 4rem;
   font-family: "Silkscreen Regular";
   font-weight: 900;
@@ -481,13 +485,7 @@ main .tiendamain h2 {
   animation-duration: 2s;
   animation-delay: 0;
 }
-main .tiendamain .titulotienda {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-main .tiendamain .titulotienda img {
+main .titulotienda img {
   animation-name: animacionparaimagenes;
   animation-iteration-count: 1;
   animation-duration: 2s;
@@ -531,10 +529,6 @@ main .tiendamain .titulotienda img {
   font-size: 23px;
   font-family: "PPSupply";
   line-height: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: default;
-  align-items: default;
   animation-name: animacionparatexto;
   animation-iteration-count: 1;
   animation-duration: 2s;
@@ -586,8 +580,7 @@ main .tiendamain .titulotienda img {
   height: 500px;
 }
 .contactomaincontenedor .tituloyform {
-  padding-top: 6rem;
-  padding-right: 2rem;
+  padding: 4rem 0rem 2rem 2rem;
   background-color: rgb(16, 16, 16);
   width: 75%;
 }
@@ -973,7 +966,7 @@ main .tiendamain .titulotienda img {
     padding-top: 0px;
   }
   footer .myfooter .logofooter img {
-    width: 100%;
+    width: 50%;
     height: auto;
     padding: 0;
     margin: 0;
@@ -1012,7 +1005,7 @@ main .tiendamain .titulotienda img {
     padding: 0;
   }
   footer .myfooter .logofooter img {
-    width: 100%;
+    width: 50%;
     height: auto;
     padding: 0;
     margin: 0;

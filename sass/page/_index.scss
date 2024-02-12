@@ -56,13 +56,7 @@
                 font-family: $fonttext;
                 line-height: 21px;
                 padding-top: 1rem;
-                @include animation (animacionparatexto, 1, 2s, 0);}
-
-                span
-                {color:$amarillofuerte;
-                &:hover
-                {color: $hover;}
-                 @include animation (animacionparatexto, 1, 2s, 0);}}
+                @include animation (animacionparatexto, 1, 2s, 0);}}
 
 
 /*PRINCIPALES SECCIONES DEL INDEX*/

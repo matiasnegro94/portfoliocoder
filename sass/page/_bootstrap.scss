@@ -23,18 +23,17 @@ main
                         .card-title
                         {color: $amarillototal;
                         font-size: 2rem;
-                        @include animation (animacionparatexto, 1, 2s, 0);}}
+                        @include animation (animacionparatexto, 1, 2s, 0);}};
 
-        .tiendamain 
-                {h2
-                {font-size: 4rem;
-                font-family: $fontpixel;
-                font-weight: 900;
-                @include animation (animacionparatexto, 1, 2s, 0);}
+        .titulotienda
+        {@include flex (row, center, center);
 
-                .titulotienda
-                {@include flex (row, center, center);
-                
-                        img
-                        { @include animation (animacionparaimagenes, 1, 2s, 0);
-                        padding: 60px 20px 0px 20px;}}}}
+        h2
+        {font-size: 4rem;
+        font-family: $fontpixel;
+        font-weight: 900;
+        @include animation (animacionparatexto, 1, 2s, 0);};
+
+        img
+        {@include animation (animacionparaimagenes, 1, 2s, 0);
+        padding: 60px 20px 0px 20px;}}}
